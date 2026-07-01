@@ -1,50 +1,2210 @@
 {
-  "BV1Test001": {
-    "title": "深入理解 React 18 并发特性",
-    "suggested_folder": "前端",
-    "confidence": "高",
-    "reason": "标题明确为前端框架 React 内容"
-  },
-  "BV1Test002": {
-    "title": "【全程干货】Linux 内核网络协议栈源码分析",
-    "suggested_folder": "操作系统",
-    "confidence": "高",
-    "reason": "Linux 内核源码属于操作系统范畴"
-  },
-  "BV1Test003": {
-    "title": "2024 前端性能优化实战指南",
-    "suggested_folder": "前端",
+  "BV1BPjM68EFK": {
+    "title": "【完结】别让你的贪念，杀死整片孕育希望的水域",
+    "suggested_folder": "漫",
     "confidence": "中",
-    "reason": "前端性能优化，可能归入性能优化类"
+    "reason": "JOJO漫剧出品，内容为漫剧形式，可能属于漫画改编动画"
   },
-  "BV1Test004": {
-    "title": "Rust 异步编程：从 Future 到 Tokio",
-    "suggested_folder": "编程语言",
-    "confidence": "高",
-    "reason": "Rust 语言特性教学"
-  },
-  "BV1Test005": {
-    "title": "数据库内核：B+树索引实现原理",
-    "suggested_folder": "数据库",
-    "confidence": "高",
-    "reason": "数据库内核索引实现"
-  },
-  "BV1Test006": {
-    "title": "数学之美：傅里叶变换的可视化理解",
-    "suggested_folder": "数学",
+  "BV1fedkBsE2Y": {
+    "title": "好兄弟又被迫穿女装",
+    "suggested_folder": "搞笑",
     "confidence": "中",
-    "reason": "数学科普类内容"
+    "reason": "标题和UP主风格暗示轻松搞笑内容"
   },
-  "BV1Test007": {
-    "title": "如何打造高效的技术团队",
-    "suggested_folder": "管理",
+  "BV1LH9QBBEpd": {
+    "title": "调整参数这块",
+    "suggested_folder": "编程",
     "confidence": "低",
-    "reason": "技术管理类，信息不足"
+    "reason": "标题简短，可能涉及技术调整，UP主过往内容倾向不明"
   },
-  "BV1Test008": {
-    "title": "C++20 Concepts 实战教程",
-    "suggested_folder": "编程语言",
+  "BV1kAjd6iEEq": {
+    "title": "《污垢之家》第五集:那就先给他个面子，今天先不嘴臭他了",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "连载形式的自制短剧，接近漫画或动画内容"
+  },
+  "BV1Y8KD6jE8c": {
+    "title": "哥哥给我个机会",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题模糊，可能为搞笑日常片段"
+  },
+  "BV1bpQGB2EDC": {
+    "title": "ai动画，孙悟空vs二郎神",
+    "suggested_folder": "ai/chatgpt",
     "confidence": "高",
-    "reason": "C++ 语言新特性教程"
+    "reason": "标题明确标注为AI动画，使用AI技术生成"
+  },
+  "BV1JTV26wEnn": {
+    "title": "【10小时全VIP配音爽文】真是太奇幻了！开局我竟然变成树，妹妹却把我交给国家拯救世界！",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "UP主星舞动漫，配音爽文多属动漫相关"
+  },
+  "BV1B77n6AEJv": {
+    "title": "呆毛在上海-合集《09-35》",
+    "suggested_folder": "画",
+    "confidence": "中",
+    "reason": "UP主为画师，合集可能为绘画作品展示"
+  },
+  "BV15wjV6TEQo": {
+    "title": "这回不是广告哥广告姐的视频了，真实用户来聊影石luna ultra",
+    "suggested_folder": "摄影",
+    "confidence": "高",
+    "reason": "讨论影石相机，属于摄影器材体验"
+  },
+  "BV1JNjd6NErw": {
+    "title": "这种假小子害羞起来才最像小动物吧？",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "参考禾视动画，内容为动画短片"
+  },
+  "BV15vjF6TEoA": {
+    "title": "《我的世界》，但是20世纪70年代",
+    "suggested_folder": "游戏",
+    "confidence": "高",
+    "reason": "直接关联游戏《我的世界》"
+  },
+  "BV1vT7561Eis": {
+    "title": "假如你穿越回20世纪初，见到爱因斯坦，你和这位天才之间会发生什么故事呢？",
+    "suggested_folder": "科幻",
+    "confidence": "中",
+    "reason": "涉及穿越和科学名人，具有科幻色彩"
+  },
+  "BV1rm786eEk3": {
+    "title": "自制小妞电影，和最讨厌的人灵魂互换了08",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "自制电影短片，属于影视创作"
+  },
+  "BV1fME16uEsi": {
+    "title": "叽叽喳小心翼翼的",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题不明，可能为萌宠或搞笑内容"
+  },
+  "BV1hNjw6vEa6": {
+    "title": "“啊，是关中王来了！”",
+    "suggested_folder": "漫",
+    "confidence": "低",
+    "reason": "汉朝题材动漫或短剧，可归入漫类"
+  },
+  "BV1pjEH62Ex7": {
+    "title": "英俊和潇洒哥合集",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "合集形式，UP主风格偏向幽默搞笑"
+  },
+  "BV1QojJ6XEv9": {
+    "title": "拳法与兵器",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "标题和UP主名称直接指向武术内容"
+  },
+  "BV14JTG6YELx": {
+    "title": "人生的分岔路口，哥布林会如何选择？",
+    "suggested_folder": "番",
+    "confidence": "低",
+    "reason": "哥布林常见于奇幻动漫，可能为动漫杂谈或二创"
+  },
+  "BV1EJTP6hERy": {
+    "title": "不一样的东方美学之西游",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "西游题材二次创作，多属于动漫或绘画"
+  },
+  "BV1K9j369EQA": {
+    "title": "【AI偶像】网友建议我穿大胆一点... 我是虚拟脱口秀演员桥桥子。目标是今后有机会上脱口秀类综艺。",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "明确标注AI偶像，使用AI生成虚拟形象"
+  },
+  "BV1QrEW6TESZ": {
+    "title": "硬核手搓MK19自动馏蛋发射器你敢信？CLUVENS实验室 第六期",
+    "suggested_folder": "军",
+    "confidence": "高",
+    "reason": "手搓武器模型，用于国防教育，明确属于军事装备DIY"
+  },
+  "BV1g3j46BEJ9": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "信息完全缺失，无法判断内容"
+  },
+  "BV1xo7K6gEu4": {
+    "title": "京剧《黑袍纠察队》适合年轻人的传统艺术",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "黑袍纠察队非漫威/DC，又不是典型鬼畜，缺乏完全匹配分类"
+  },
+  "BV1LJjx6VEyN": {
+    "title": "祖国人 vs 威斯克",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "两个不同作品角色的跨次元对决，偏向漫画/游戏衍生"
+  },
+  "BV1mxNueyEZ7": {
+    "title": "【猫meme】⚡史上最全万恶之源⚡",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "猫meme合集，典型的搞笑娱乐视频"
+  },
+  "BV1LtEk6fEVU": {
+    "title": "第一集：我寻思我也妹违规啊？",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题含糊，无有效分类线索"
+  },
+  "BV1WQ7f6WEUn": {
+    "title": "Prompt可能不如if-else…大模型思维工程到底如何养成？",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "中",
+    "reason": "关于大模型Prompt和思维工程，属于AI应用范畴"
+  },
+  "BV14d7k62Etp": {
+    "title": "带我的刀盾，比比拉布香蕉猫，上山野采，遇神奇物种！",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "户外野采萌宠vlog，无对应收藏夹"
+  },
+  "BV1KK4y1S7x2": {
+    "title": "【熟肉】黑人老哥小时候被班主任坑去采棉花",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "翻译搞笑段子，以幽默经历为主"
+  },
+  "BV1moLD6cE42": {
+    "title": "经典电影中的CJ，你看过几部？",
+    "suggested_folder": "游戏",
+    "confidence": "高",
+    "reason": "CJ是GTA游戏主角，视频围绕游戏角色在电影中出场"
+  },
+  "BV1FhJF6DEXc": {
+    "title": "AI味的成人V?",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题模糊，AI生成成人内容但无明确匹配"
+  },
+  "BV12Qju6jEFk": {
+    "title": "严重怀疑爸爸是缅甸高层回国啊，要被笑死了全网“嘴”强爸爸",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "明显搞笑吐槽家庭段子"
+  },
+  "BV1moji6ZEUQ": {
+    "title": "我这封面很低俗吗？",
+    "suggested_folder": "Lovecraft",
+    "confidence": "中",
+    "reason": "备注提到古神，暗示克苏鲁元素，符合Lovecraft收藏"
+  },
+  "BV17fNfeKENZ": {
+    "title": "乌尔善：不是哥们，你们怎么都不用好莱坞特效啊？怎么都一部续集要拍四五年啊？",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "吐槽电影特效和制作周期，电影行业话题"
+  },
+  "BV1wSL96YEkY": {
+    "title": "seko教你学习王处，这期内容什么叫逐层收口？喜欢王处的去支持王处吧，我可太爱王处了。",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "不明所指，可能为教学但无对应收藏夹"
+  },
+  "BV1cRL96FESX": {
+    "title": "假小子的下午活动？",
+    "suggested_folder": "3d",
+    "confidence": "中",
+    "reason": "备注打光、人物性格，推测为3D动画创作"
+  },
+  "BV1hHjg6dEsk": {
+    "title": "部长：你都能把这个事干好了，那减震厂吃屎啊，张雪：我改完了真的好太多了",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "摩托车改装故事，但无摩托车分类，只能默认"
+  },
+  "BV14SV361EJL": {
+    "title": "百万英镑，但是人格分裂",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "AI生成的荒诞情景剧，偏向搞笑"
+  },
+  "BV1mPJN6CEnB": {
+    "title": "关于哈基蜂穿越到法环后遇到梅琳娜这件事",
+    "suggested_folder": "魂系",
+    "confidence": "高",
+    "reason": "艾尔登法环为魂系游戏，明确指向"
+  },
+  "BV1deEA6HEdN": {
+    "title": "王处真是个好领导啊，还能给我们优惠，我要追随他一辈子~~国产算力优化推荐是石科技 #程序员 #领导 #产品经理 #是石科技 #大模型",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "中",
+    "reason": "视频标题涉及国产算力和大模型，适合归入AI相关收藏夹。"
+  },
+  "BV16PGQ6yEpu": {
+    "title": "洋人 我真没有钱陪你们闹了",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题像是吐槽段子，可能属于搞笑内容。"
+  },
+  "BV1yJGC6aEdn": {
+    "title": "还是i柯权威",
+    "suggested_folder": "漫",
+    "confidence": "低",
+    "reason": "标题含“i柯”，疑指柯南等动漫，可能为动漫剪辑。"
+  },
+  "BV1WKtpzREhL": {
+    "title": "转载国外玩家AI制作：美少女战士们在海滩舞蹈",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "中",
+    "reason": "视频为AI制作的美少女战士内容，适宜归入AI分类。"
+  },
+  "BV1sfd7BwEkW": {
+    "title": "异界修士拿玉佩换大米？这超市赚翻了？",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "异界修仙搞笑短剧，无明确匹配收藏夹"
+  },
+  "BV1679YBtEDt": {
+    "title": "臭猫都比你会撩",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题和内容指向搞笑宠物视频"
+  },
+  "BV11KdsBDEhS": {
+    "title": "大师！这是什么经！！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "UP主常发搞笑内容，标题玩梗"
+  },
+  "BV1gSdhB1EMS": {
+    "title": "为什么贴上符纸不能动？！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "玩梗式提问，属于搞笑短片"
+  },
+  "BV1WHo5B9EDm": {
+    "title": "臭猫",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "猫咪搞笑视频"
+  },
+  "BV1F7dmBkEfZ": {
+    "title": "用AI弥补何润东没骑马的遗憾（加长版）",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "标题明确使用AI技术生成视频"
+  },
+  "BV1HFRgBvE8S": {
+    "title": "姜武出演微故事《有梦就去追》 演绎张雪的奋斗故事",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "央视频励志微电影，无明确匹配收藏夹"
+  },
+  "BV1Qf9eBEE4D": {
+    "title": "这是什么？",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "汽车内容模糊，无法判断具体类别"
+  },
+  "BV1xm9yBqEeZ": {
+    "title": "接下来登场的是，方程豹FormulaX",
+    "suggested_folder": "新能源汽车",
+    "confidence": "高",
+    "reason": "方程豹为比亚迪新能源越野品牌"
+  },
+  "BV1v69DBiEYi": {
+    "title": "问界M9还有一款新车值得期待哦，问界M9 mini",
+    "suggested_folder": "新能源汽车",
+    "confidence": "高",
+    "reason": "问界M9是新能源车型"
+  },
+  "BV1Li9DBuEiq": {
+    "title": "我懂规矩",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题和UP风格指向搞笑段子"
+  },
+  "BV1Xv9vB9EuV": {
+    "title": "oh baby 情话多说一点",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "引用歌曲《爱你》歌词，可能为唱歌或模仿视频"
+  },
+  "BV1PsD3BYEpt": {
+    "title": "她穿红色裤衩，我享肾虚人生~labubu",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "玩偶labubu的搞怪短剧"
+  },
+  "BV15kdhBnEKH": {
+    "title": "大型纪录片《色情网站》持续为您播出",
+    "suggested_folder": "纪录片",
+    "confidence": "中",
+    "reason": "标题模仿纪录片形式，可能为恶搞纪录片内容"
+  },
+  "BV1Sfd2B9EKZ": {
+    "title": "徕卡官宣中国产CMOS！再见了索小弟 长光辰芯能成为国产相机突破口吗？",
+    "suggested_folder": "摄影",
+    "confidence": "高",
+    "reason": "讨论相机传感器技术，与摄影器材直接相关"
+  },
+  "BV1KWddB6EMr": {
+    "title": "张雪要整顿技师",
+    "suggested_folder": "骑行",
+    "confidence": "中",
+    "reason": "张雪为机车网红，内容涉及摩托车相关话题"
+  },
+  "BV1LMd2BfEGm": {
+    "title": "张雪师傅牙哥回应网友，自己是做什么的",
+    "suggested_folder": "骑行",
+    "confidence": "中",
+    "reason": "张雪相关人物，属于机车话题"
+  },
+  "BV1epdCBQExf": {
+    "title": "贾斯汀·比伯 -《Baby》改编（朝鲜）",
+    "suggested_folder": "鬼畜",
+    "confidence": "高",
+    "reason": "恶搞改编知名歌曲，典型鬼畜区风格"
+  },
+  "BV12SPdzcES6": {
+    "title": "突然就懂了为什么说文化工作者要有文化",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题具有吐槽调侃意味，推测为搞笑内容"
+  },
+  "BV12edrBiEQN": {
+    "title": "大疆Pocket4全网首发鸿蒙互传拍4K素材10秒不到传完太夯了",
+    "suggested_folder": "鸿蒙玩法",
+    "confidence": "高",
+    "reason": "直接展示鸿蒙互传功能，与鸿蒙生态强相关"
+  },
+  "BV1JF4m137uQ": {
+    "title": "“先点炸弹后点烟，一口赛过活神仙”",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "标题为典型网络搞笑段子语录，UP主为混剪作者，内容为搞笑混剪。"
+  },
+  "BV1ePXZBnE8r": {
+    "title": "恭喜张雪机车夺冠，特制此片向张雪和张雪机车工作人员致敬！#张雪 #张雪机车 #wsbk #摩托车 #中国制造",
+    "suggested_folder": "骑行",
+    "confidence": "高",
+    "reason": "标题明确关联摩托车赛事与张雪机车，骑行收藏夹涵盖摩托车内容。"
+  },
+  "BV188XeBLE1A": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，仅备注提及“张总直爽”，无法确定具体内容。"
+  },
+  "BV1RcXYBLExx": {
+    "title": "张雪机车夺冠绝不是偶然！内部会议曝光造车核心逻辑",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "内容涉及张雪机车造车逻辑，属于创新制造领域，偏向科技与创新。"
+  },
+  "BV1GnWvzFELx": {
+    "title": "从县城修车工到营收7亿的车企老板。",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "讲述车企老板创业历程，与造车、创新相关，符合科技创新主题。"
+  },
+  "BV1NnAHzFE5z": {
+    "title": "五年之前，他做了一个怪梦，看了他不该看的东西，从此眼睛……",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题悬疑，无明确分类指向，无法匹配现有收藏夹。"
+  },
+  "BV1bXAJz8EYC": {
+    "title": "⚡对 对 子 战 神⚡",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "BGM为网络热门搞笑曲，标题为玩梗格式，内容应为搞笑剪辑。"
+  },
+  "BV1cHQ1B4Eod": {
+    "title": "大型纪录片《年轻接戏太随性麻烦找上门》持续为您播出",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "模仿大型纪录片口吻进行幽默解说，属于搞笑视频常见形式。"
+  },
+  "BV1YTX5BbEbj": {
+    "title": "拍马戏要什么威亚？导演亲自上阵，速度快到摄影师都跟不上！",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "夸张描述拍摄趣事，内容为幽默搞笑片段。"
+  },
+  "BV1xTXLBEEV4": {
+    "title": "胎盘小狗逆袭记",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "宠物相关温馨内容，但无对应收藏夹，且非纯粹搞笑。"
+  },
+  "BV1TtX8BcEmC": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效，UP主名可能指向纪录片，但无法确认内容。"
+  },
+  "BV1BcpLz7EXW": {
+    "title": "我真受不了这死夹子 #东北女孩",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "吐槽日常，带有东北搞笑标签，属于生活搞笑类。"
+  },
+  "BV1S6X7BYE6L": {
+    "title": "【大肉嘎】金发大肉嘎 冒牌公主",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "主播直播切片，内容偏向搞笑娱乐。"
+  },
+  "BV1S6X7BYE3S": {
+    "title": "【大肉嘎】无水印纯净截图版",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "同为大肉嘎主播切片，娱乐搞笑属性明确。"
+  },
+  "BV1VhAwzQEmy": {
+    "title": "骑马摇头晃脑，像走T台，少年将军的模版摆在那都不会抄",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "吐槽影视剧骑马姿势，带有幽默讽刺，归入搞笑合适。"
+  },
+  "BV1BAXEBmEve": {
+    "title": "【大肉嘎】主播今天肯定不淑女  哪有淑女穿俩老头背心的",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "大肉嘎切片，搞笑吐槽主播打扮。"
+  },
+  "BV1T6XwBEECp": {
+    "title": "笑不活了，大鼻嘎病情有所好转，不用担心",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "内容不明，仅从标题无法判断具体领域，无合适分类。"
+  },
+  "BV1N7QSB1EHZ": {
+    "title": "原来当年鸿门宴这一段是陈道明改了剧本，难怪现在还能在热搜上！！",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "涉及影视剧《鸿门宴》幕后，属于影视相关内容。"
+  },
+  "BV1UqA3zqEGy": {
+    "title": "一只猫的表情能有多傻",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "萌宠搞笑表情展示，符合搞笑分类。"
+  },
+  "BV1NUAwzuE3C": {
+    "title": "不允许有人还没看过今年的东京女孩走秀！",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "时尚走秀剪辑，不匹配现有收藏夹主题。"
+  },
+  "BV1SeA3zzEU7": {
+    "title": "小狗：就让这大雨全都落下～",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "小狗与流行歌词结合，萌宠搞笑视频。"
+  },
+  "BV1zgPfzsExa": {
+    "title": "我穿越过来后，对象竟要我将肾捐出来",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "短剧式虚构故事，可归入影视类收藏夹。"
+  },
+  "BV1mSwCzREtr": {
+    "title": "最令人心碎的重逢",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "情感向影视片段剪辑，属于影视内容二次创作。"
+  },
+  "BV1HDckzGEFg": {
+    "title": "《我成了反派女魔头的守护剑灵》别人拜师拜仙尊，我开局绑定反派女魔头！",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "小说改编短剧，可视为影视类内容。"
+  },
+  "BV1BQVNzFEKZ": {
+    "title": "边牧：都不知道它在狗叫什么",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "宠物狗趣味互动，属于搞笑视频"
+  },
+  "BV1jucfzLExa": {
+    "title": "张拿铁演出忘词如何救场",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "演出忘词救场属于典型搞笑娱乐内容"
+  },
+  "BV1YPNFzEE36": {
+    "title": "《关于缅因猫抱着人睡这件事》",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "萌宠日常，无直接匹配，暂归搞笑"
+  },
+  "BV16YcRzGE8h": {
+    "title": "外国人都在找掩体，只有中国人在找机位！眼里没有一点打仗带来的紧迫感，全是亲眼看到导弹拦截的兴奋！果然一生爱凑热闹的中国人，啥场面都敢上去看两眼！",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "直接反映战地现场及民众反应，属于时事话题"
+  },
+  "BV17ZvfBHEzZ": {
+    "title": "“美利坚严选这一块 哈哈哈”",
+    "suggested_folder": "美国",
+    "confidence": "高",
+    "reason": "标题明确调侃美利坚，与美国主题收藏夹契合"
+  },
+  "BV1TvwczKEwt": {
+    "title": "为啥男人都不要结婚了",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "涉及社会现象讨论，符合思考类内容"
+  },
+  "BV1mEFUzeEyQ": {
+    "title": "为什么说不存在所谓的随母姓？美女这番解读太透彻了。",
+    "suggested_folder": "思考",
+    "confidence": "高",
+    "reason": "深入解读社会姓氏观念，属于思考话题"
+  },
+  "BV1L3NMz1ENd": {
+    "title": "爸爸和爷爷续火花",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "家庭趣事主题，偏向轻松搞笑"
+  },
+  "BV125N3zgE6z": {
+    "title": "我很想找一个男人，不要彩礼，给他生10个大胖小子，可惜就是没有这个能力",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "夸张吐槽式段子，典型搞笑风格"
+  },
+  "BV15DPazVEWt": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效无有效信息，无法判断分类"
+  },
+  "BV1jm421E7T5": {
+    "title": "【4K60帧】“影史上最爽的一口烟”",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "经典电影片段剪辑，明确属于电影类"
+  },
+  "BV1djPfznEhc": {
+    "title": "全宇宙最爽的一口冰红茶",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "模仿爽口烟梗的幽默模仿，倾向搞笑"
+  },
+  "BV1XPPNzfENT": {
+    "title": "松弛感这一块还得看新华社编外王牌战地记者，甚至能给你拍到掉落的导弹",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "视频内容涉及战地记者拍摄导弹掉落，直接关联时事新闻"
+  },
+  "BV1YxUTBbEHq": {
+    "title": "嘴硬的女人，其他地方都软",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "标题含擦边暗示，且UP主名带大厨但与美食无关，归类为美女吸引眼球类"
+  },
+  "BV16QHfzMEAL": {
+    "title": "大勺卡嗓子如何是好",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "UP主名俏俏大厨，标题涉及大勺(勺子)，明显为美食相关"
+  },
+  "BV1gkkgBXE2x": {
+    "title": "指挥官 你要选哪个？",
+    "suggested_folder": "游戏",
+    "confidence": "低",
+    "reason": "标题含“指挥官”，常见于舰娘类游戏，推测为游戏相关视频"
+  },
+  "BV1WabCzHEZf": {
+    "title": "十里八乡的俊后生",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题风格轻松诙谐，可能为搞笑或颜值类内容"
+  },
+  "BV1QtmdBtExf": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无有效信息，无法分类"
+  },
+  "BV1qy2aBvEE5": {
+    "title": "轩的故事，当然由轩自己讲更合适.....",
+    "suggested_folder": "电影",
+    "confidence": "低",
+    "reason": "视频介绍演员黄轩，与影视相关"
+  },
+  "BV1uKrSBoEC8": {
+    "title": "五星级猫猫厨房总厨师颠勺中",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "猫在厨房的趣味场景，属于宠物搞笑内容"
+  },
+  "BV1ow41167H4": {
+    "title": "【阿比盖尔真实之钥】是谁的san值突然就开始飙升了！原来是我~",
+    "suggested_folder": "Lovecraft",
+    "confidence": "高",
+    "reason": "标题含“san值”等克苏鲁元素，明确指向洛夫克拉夫特风格"
+  },
+  "BV1kQcYzSEEb": {
+    "title": "Sweetie Fox",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "标题和UP主名称暗示美女/福利内容"
+  },
+  "BV1rwcBzbEiD": {
+    "title": "守护国门！他们在中老越边境监测防治入侵农业害虫！",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "央视农业的新闻报道，属于时事类"
+  },
+  "BV1ZEcYzGEmN": {
+    "title": "玩游戏，就像打赛博螺丝....",
+    "suggested_folder": "游戏",
+    "confidence": "高",
+    "reason": "标题直接提及玩游戏，游戏相关"
+  },
+  "BV1eQrGBhEx5": {
+    "title": "“不会演就别演，李世民要是不长这样，那肯定是李世民自己本身的问题”",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "吐槽影视剧，语气幽默，适合搞笑分类"
+  },
+  "BV1bVFZzfEBX": {
+    "title": "我瘦了150斤的个人避坑指南",
+    "suggested_folder": "武/健",
+    "confidence": "中",
+    "reason": "减肥经验分享，属于健身健康范畴"
+  },
+  "BV1Czc4zeEQq": {
+    "title": "锁容？寿命暴跌？历时249天1600次循环！告诉你手机电池的终极秘密【新评科技】",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "手机电池寿命评测，属于硬件科技类"
+  },
+  "BV1XV6bBqEXo": {
+    "title": "到底是谁想起来让御姐类型搞可爱的啊！！！！！！“不过是提督的任务罢了”",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "直播切片，带有搞笑性质，可能属于搞笑类"
+  },
+  "BV1NhhGzzEJm": {
+    "title": "不敢开火，瞎举什么！",
+    "suggested_folder": "军",
+    "confidence": "低",
+    "reason": "标题涉及开火，可能为军事相关，但信息不足"
+  },
+  "BV1At61BAEVg": {
+    "title": "你们男人的梦想 不就是娶个这样身材的妻子吗？",
+    "suggested_folder": "番",
+    "confidence": "高",
+    "reason": "备注明确提到虚构推理，为番剧内容"
+  },
+  "BV1mkBxY9EHo": {
+    "title": "在装逼我让你飞起来",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题看似搞笑片断，无其他明确指向"
+  },
+  "BV1PnzbY8ECB": {
+    "title": "我骂你是因为你有病",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题为吐槽内容，可能属于搞笑类"
+  },
+  "BV1MoGwzKEqr": {
+    "title": "地狱猫最真实的动力声音",
+    "suggested_folder": "军",
+    "confidence": "低",
+    "reason": "地狱猫可能指F6F战斗机或汽车，UP主信息不明，暂归军事"
+  },
+  "BV1NxrHBgEuw": {
+    "title": "如果不是生活所迫，谁又愿意进宫当太监呢 \"",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "UP为影视解说账号，标题可能为某部作品台词"
+  },
+  "BV1E7zQBgEWQ": {
+    "title": "不是！我发现了新的画法！！",
+    "suggested_folder": "画",
+    "confidence": "高",
+    "reason": "标题明确提到发现新画法，属于绘画内容"
+  },
+  "BV1TU6zBsE4e": {
+    "title": "「手办改色过程」火焰猫燐→小白猫",
+    "suggested_folder": "手办",
+    "confidence": "高",
+    "reason": "标题明确为手办改色过程"
+  },
+  "BV1V2u7z7EJ9": {
+    "title": "地精游荡40年",
+    "suggested_folder": "游戏",
+    "confidence": "中",
+    "reason": "地精是常见游戏种族，可能是游戏相关视频"
+  },
+  "BV1cfk6BWEgp": {
+    "title": "老板的要求",
+    "suggested_folder": "3d",
+    "confidence": "中",
+    "reason": "MMD视频，涉及模型与渲染，属于3D动画范畴"
+  },
+  "BV1dF6wBaE5r": {
+    "title": "【已完结】你连续通宵十年 打通了一款修仙游戏 游戏里你是全服世界排行榜第一名",
+    "suggested_folder": "漫",
+    "confidence": "高",
+    "reason": "UP主为漫画类，标题为漫画解说风格"
+  },
+  "BV1p3kKBtEzH": {
+    "title": "【远古时代装机猿】我的十年女性朋友希望我过后买电脑？如果OpenAI项目崩盘，那配件涨价就不复存在了",
+    "suggested_folder": "硬件",
+    "confidence": "中",
+    "reason": "讨论电脑装机与配件价格，涉及硬件话题"
+  },
+  "BV11P65B7Ebe": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效，无法判断内容"
+  },
+  "BV1yQzYBPEWC": {
+    "title": "看我画的是不是你的梦",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "备注明确为AI绘画生成的二次元风景"
+  },
+  "BV1gK6CBzEj8": {
+    "title": "上帝粒子：一百亿美元的脏话",
+    "suggested_folder": "量子",
+    "confidence": "中",
+    "reason": "希格斯玻色子属于粒子物理，与量子力学紧密相关"
+  },
+  "BV1Wx6wByEkL": {
+    "title": "我突然懂了什么叫妖怪能闻到人类的味道，什么叫强大的信息素",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "内容模糊，无明确分类指向"
+  },
+  "BV1KrrHYSEJ2": {
+    "title": "【梅派&程派】你听过两种青衣戏腔唱的《此去半生》吗？加长版来啦～",
+    "suggested_folder": "音乐",
+    "confidence": "高",
+    "reason": "戏曲翻唱歌曲，属于音乐内容"
+  },
+  "BV1oVrzB3EG5": {
+    "title": "女生每月的冷静期，冷却中…",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "疑似幽默吐槽女性生理期，无明确分类"
+  },
+  "BV133rHBSEHP": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效且无有效信息"
+  },
+  "BV1GN2EBRE4G": {
+    "title": "揭秘日本2女孩同居细节，颜值惊人",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "日本青春励志电影解说"
+  },
+  "BV1r4rbBQEFe": {
+    "title": "弹簧轻两磅或者重两磅到底什么意思？",
+    "suggested_folder": "军",
+    "confidence": "中",
+    "reason": "可能与枪械扳机力有关"
+  },
+  "BV1gar8BMEhz": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效且无有效信息"
+  },
+  "BV1PT6ZBKEq5": {
+    "title": "全程能绷住的只有神人了！！！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "超长搞笑合集"
+  },
+  "BV1zNZuYCEFD": {
+    "title": "男子写歌恶搞美国乡村音乐，结果因太好听意外成为年度最红的乡村歌曲（中文字幕）",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "音乐恶搞与乡村音乐相关"
+  },
+  "BV1uPixBVECs": {
+    "title": "“你的油田，我的家乡” 大东北雨宙金曲-美国民谣（3補）",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "改编音乐作品"
+  },
+  "BV13T8FzCEWH": {
+    "title": "孩子：感觉不动产动了一下……",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "幽默短剧"
+  },
+  "BV1ZHTMzREUe": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效，备注无明确分类指向"
+  },
+  "BV1bB62B5ExY": {
+    "title": "这就是高手的暗示对话吗？看来大家都没少看",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "疑似恋情话题，偏娱乐"
+  },
+  "BV13VsNzjE4T": {
+    "title": "Diana Rider 175cm 这个我是真的爱",
+    "suggested_folder": "妹汁",
+    "confidence": "低",
+    "reason": "高挑美女展示"
+  },
+  "BV1CvkXBtE6k": {
+    "title": "又纯又欲说的就是这种吗？",
+    "suggested_folder": "妹汁",
+    "confidence": "低",
+    "reason": "女性魅力展示"
+  },
+  "BV1vRvaBBE6R": {
+    "title": "【65小时ai有声书】你有概念神般的不死不灭和短距离瞬移能力，但你却被系统传送到了月球表面！",
+    "suggested_folder": "科幻",
+    "confidence": "高",
+    "reason": "超能力科幻题材有声书"
+  },
+  "BV1p6i4BqErv": {
+    "title": "你们知道流放岭南、意味着什么吗？",
+    "suggested_folder": "纪录片",
+    "confidence": "低",
+    "reason": "可能历史解说，无匹配分类"
+  },
+  "BV1D4rNBeEh5": {
+    "title": "黑珍 大摆锤",
+    "suggested_folder": "妹汁",
+    "confidence": "低",
+    "reason": "舞蹈美女剪辑"
+  },
+  "BV1AWirB1EcV": {
+    "title": "丧尸爆发，我和重生闺蜜靠猫咪通关 第1集",
+    "suggested_folder": "番",
+    "confidence": "中",
+    "reason": "原创丧尸动画短片"
+  },
+  "BV1BsixBZEeH": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效无信息"
+  },
+  "BV11YBjBEERY": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效无信息"
+  },
+  "BV1RC6mBfEDU": {
+    "title": "【上门服务EP3】取消差评的方法",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "搞笑剧情短片"
+  },
+  "BV17tB7BrEKb": {
+    "title": "拥有一只“真火壁炉”竟然已经这么简单了吗？堪称完美的设计方案",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "创意科技方案分享"
+  },
+  "BV1EPqYBJEr3": {
+    "title": "（加更）你瞧瞧给老板逼的",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "直播日常，标题有搞笑意味，符合搞笑类"
+  },
+  "BV1JcxizUE2M": {
+    "title": "不错",
+    "suggested_folder": "3d",
+    "confidence": "高",
+    "reason": "MMD动画，使用尘白禁区模型，属于3D渲染类"
+  },
+  "BV1gr4y1G7K3": {
+    "title": "太真实了！窦文涛表示满人做皇帝他接受不了",
+    "suggested_folder": "观察",
+    "confidence": "中",
+    "reason": "历史观点讨论，带有社会观察性质"
+  },
+  "BV1gEqhBwEb6": {
+    "title": "《家装之王》20",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "无法确定是游戏还是真实家装，无匹配收藏夹"
+  },
+  "BV1arq3ByEMt": {
+    "title": "学医一定要伺候好导师，医学地域性太强了，导师的能量也太大了，伺候老师不丢人",
+    "suggested_folder": "学习",
+    "confidence": "中",
+    "reason": "经验分享、学业指导，可归入学习类"
+  },
+  "BV1iYqeBEEvR": {
+    "title": "慕沛灵：韩立又去妙音门了，南宫姐姐你倒是管管啊",
+    "suggested_folder": "漫",
+    "confidence": "高",
+    "reason": "动漫二创内容，明显属于漫类"
+  },
+  "BV1d9mMBNEpq": {
+    "title": "「首发」160瓦AI MAX+395有多强？1升体积超大均热板+万兆+3个M.2+双USB4，奋微FEVM FAEX1迷你主机评测",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "硬件评测视频，详细介绍迷你主机规格与性能"
+  },
+  "BV1nk4y1A7YN": {
+    "title": "【真栗醉酒记④】最风情的一集！醉酒唱百万个吻！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "醉酒唱歌属于娱乐搞笑内容，且UP主为切片授权，非严肃音乐创作。"
+  },
+  "BV19WGWzMEVk": {
+    "title": "【真栗】背超A短发能拿到会唱百万个吻的团子？主播心态崩了",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "标题和内容围绕女主播（真栗）的直播切片，属于妹汁类主播日常。"
+  },
+  "BV1yFtrzrET7": {
+    "title": "网上那些说要跟你约拍互勉的摄影师靠谱吗？",
+    "suggested_folder": "摄影",
+    "confidence": "高",
+    "reason": "标题和话题明确围绕约拍和摄影师，属于摄影领域。"
+  },
+  "BV16V29BKE6B": {
+    "title": "口罩＋紧身衣？这确定助眠？极致包裹感下的360°沉浸助眠  圈圈ASMR高跟声控耳语酥麻按摩哄睡",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "ASMR助眠内容没有直接匹配的收藏夹，无法准确分类。"
+  },
+  "BV1QzyeBfEkk": {
+    "title": "【真栗】为什么路易十六被砍头之后还能回血赚一笔？主播笑嘻了",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "标题和内容围绕女主播（真栗）的直播切片，属于妹汁类主播日常。"
+  },
+  "BV1rVCvBkEnw": {
+    "title": "贪吃的猪",
+    "suggested_folder": "食",
+    "confidence": "低",
+    "reason": "标题“贪吃的猪”结合UP主名称“oink”推测可能与食物或吃播有关。"
+  },
+  "BV1uT4y1o7aj": {
+    "title": "如何设计一个能超越时代和语言的图标呢？",
+    "suggested_folder": "学习",
+    "confidence": "中",
+    "reason": "视频内容为设计知识科普，属于学习类内容。"
+  },
+  "BV1PR2vBxEYg": {
+    "title": "GitHub 上 4500 人收藏的屏幕共享神器，绝了｜ AI 二次开发",
+    "suggested_folder": "ai agent",
+    "confidence": "高",
+    "reason": "标题明确提到GitHub开源工具和AI二次开发，符合ai agent分类。"
+  },
+  "BV1me2LBMEKY": {
+    "title": "成大事者要拘小节",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "标题为观点性论述，UP主独夫之心常发布时事评论，符合思考类内容。"
+  },
+  "BV1Xa2YBYE95": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，仅有评论猜测，信息不足无法分类。"
+  },
+  "BV1QC25BGEkC": {
+    "title": "前车汁溅，后车汁湿",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题像是一个搞笑段子或行车记录仪记录的滑稽画面。"
+  },
+  "BV1rv2aBkEdd": {
+    "title": "如果要去徒步旅行，你想带哪一个压缩帐篷胶囊呢？ ASMR",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "户外装备测评或ASMR内容没有特别匹配的收藏夹。"
+  },
+  "BV1B82xBDEet": {
+    "title": "甲亢哥唱 阳光彩虹小白马 Sunshine Rainbow Wonder Mare",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "网红（甲亢哥）唱歌通常被视为搞笑或娱乐内容。"
+  },
+  "BV1sEYzzJE5C": {
+    "title": "一个帅哥一巴掌#情侣日常",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "带#情侣日常 标签的短视频通常为搞笑剧情。"
+  },
+  "BV1DA2xBuEuh": {
+    "title": "blender臀部抖动-瑜伽动作示范 建模|角色|瑜伽",
+    "suggested_folder": "Blender",
+    "confidence": "高",
+    "reason": "标题和标签明确提到使用Blender软件进行建模制作。"
+  },
+  "BV1nQ4xzZEnB": {
+    "title": "金广发模仿最像的一次",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "标题明确为搞笑模仿"
+  },
+  "BV1g3yKBLE9i": {
+    "title": "游戏up4个月减肥70斤！保姆级无广告无药物教学 助你找回颜值重返健康",
+    "suggested_folder": "武/健",
+    "confidence": "中",
+    "reason": "减肥教学属于健身健康范畴，UP主虽为游戏区但内容明确为健康减重指导。"
+  },
+  "BV11Z421a7e4": {
+    "title": "鲨鱼刷牙视频之“别说吐我嘴里”",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "标题和UP主风格明显为搞笑娱乐视频。"
+  },
+  "BV1NVyFBSExz": {
+    "title": "别信任何厂商的吹牛 我告诉你什么是一副「好眼镜」 （1）：智能眼镜的波导镜组科普",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "科普智能眼镜的波导镜组，属于硬件科技类内容。"
+  },
+  "BV1eJyvBaEJU": {
+    "title": "只要胆子大女鬼放产假，我被女鬼包围了（完整版）",
+    "suggested_folder": "游戏",
+    "confidence": "低",
+    "reason": "标题疑似恐怖游戏实况或搞笑剪辑，归入游戏分类较为保守。"
+  },
+  "BV1yQunz6E2n": {
+    "title": "为什么工科生不拍vlog",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "探讨工科生生活方式与思维习惯，适合思考类收藏。"
+  },
+  "BV1AnCTBNEaE": {
+    "title": "一加手机全系ROOT & 深度测试教程，零基础小白轻松搞定！",
+    "suggested_folder": "软件",
+    "confidence": "高",
+    "reason": "手机ROOT属于软件操作和系统修改教程。"
+  },
+  "BV1Qe66YVEDB": {
+    "title": "抖抖抖！站不稳 声音也颤抖吗？",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "内容不明，可能为医疗科普或搞笑，难以匹配现有分类。"
+  },
+  "BV162421M7P4": {
+    "title": "合肥吉利银河 后半场已经站不住了（下）",
+    "suggested_folder": "新能源汽车",
+    "confidence": "高",
+    "reason": "吉利银河为新能源汽车品牌，内容明显与汽车相关。"
+  },
+  "BV1EmC4B7EmZ": {
+    "title": "被水淹没 不知所措",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题和备注充满喜剧效果，高压水枪恶搞，属于搞笑内容。"
+  },
+  "BV17uWAz7E56": {
+    "title": "帮兔娘升舱说是",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "信息不足，兔娘可能指虚拟主播或cos，但无法归入现有分类。"
+  },
+  "BV1CpgyzrExv": {
+    "title": "搜查官剧情",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "可能为剧情短片或cos，无明确分类线索。"
+  },
+  "BV1pxu4zXEzd": {
+    "title": "英国黑人和美国黑人有啥区别🤔",
+    "suggested_folder": "学习",
+    "confidence": "高",
+    "reason": "英语学习类内容，UP主为英语外教，讨论语言文化差异。"
+  },
+  "BV1DGbJeqEgE": {
+    "title": "这是billie eilish吗？huge！",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "标题涉及歌手Billie Eilish，可能为音乐相关搞笑片段。"
+  },
+  "BV1qi4y1V7mo": {
+    "title": "Billie，如果狗子有罪，就用法律来惩罚它，而不是你打胸吓它！",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "同样与Billie Eilish相关，偏向音乐话题。"
+  },
+  "BV1JKC7BsEUw": {
+    "title": "【CamLogic相机逻辑】会想就多想点！Insta360 Ace Pro 2 全新潮玩附件",
+    "suggested_folder": "摄影",
+    "confidence": "高",
+    "reason": "相机及摄影附件评测，直接属于摄影领域。"
+  },
+  "BV1fJ411X72R": {
+    "title": "感受一下小丑潘尼怀斯演员四妹的癫狂演技",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "演员演技片段，源自电影角色小丑，归入电影收藏夹。"
+  },
+  "BV1TG411Z7bt": {
+    "title": "为艺术献身的女星—蕾切尔·薇姿 Rachel Weisz",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "介绍电影女星及其艺术作品，明确属于电影类。"
+  },
+  "BV1PokyB3EWZ": {
+    "title": "【STN鸡哥】猫猫强制爱（请勿外放）",
+    "suggested_folder": "游戏",
+    "confidence": "中",
+    "reason": "UP主STN鸡哥为知名游戏自媒体，内容大概率与游戏相关。"
+  },
+  "BV1es4y1K73u": {
+    "title": "为艺术献身的女星-科洛·格蕾斯·莫瑞兹",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "介绍电影女星及其艺术作品，电影分类。"
+  },
+  "BV1UN411v7yu": {
+    "title": "1976《魔女嘉莉》，以暴制暴，社恐良药",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "斯蒂芬·金小说改编的恐怖电影解说，电影类。"
+  },
+  "BV1RP411R7CX": {
+    "title": "“她穿着最喜欢的嫁衣，去承受着最屈辱的痛”",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "可能为影视剪辑，但缺乏明确类型信息，暂归默认。"
+  },
+  "BV1DskCBVEmB": {
+    "title": "已失效视频",
+    "suggested_folder": "番",
+    "confidence": "低",
+    "reason": "UP主昵称含“补番”，推测原视频可能为番剧相关。"
+  },
+  "BV1sRnPz9ETB": {
+    "title": "如果一个女孩在看你...",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "仅知BGM音乐，内容不明，无匹配分类。"
+  },
+  "BV1gvN5zWEFk": {
+    "title": "健身好啊！还是得练！",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "标题和UP主信息直接指向健身锻炼。"
+  },
+  "BV1bdkUBtEYB": {
+    "title": "女朋友卸妆以后下不去嘴",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "典型的生活搞笑段子视频。"
+  },
+  "BV1tT2ABMEeE": {
+    "title": "【真栗】你们这个年纪的男孩子，都喜欢我这种大姨吧？聊聊呗小傻瓜",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "主播切片，语气诙谐，适合搞笑分类。"
+  },
+  "BV1jL8kzMEtS": {
+    "title": "不愧是锥k",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题和UP信息不足，无法匹配现有收藏夹"
+  },
+  "BV1Am1FBnEvV": {
+    "title": "正经训练是没有流量的，擦边是会被喷的",
+    "suggested_folder": "武/健",
+    "confidence": "中",
+    "reason": "标题提及训练，可能为健身内容"
+  },
+  "BV1qraUzhE42": {
+    "title": "永远相信千禧年的工业设计",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "工业设计主题不直接匹配任何现有收藏夹"
+  },
+  "BV19dWYz4ETv": {
+    "title": "川菜厨师告诉你：一颗辣椒如何变成香辣红油",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "美食作家王刚的烹饪教学视频，明确属于美食类"
+  },
+  "BV18Ha8zaE5b": {
+    "title": "风火轮想要好玩儿？ 车壳基础 悬挂就不基础…",
+    "suggested_folder": "编程/硬件/DIY",
+    "confidence": "中",
+    "reason": "风火轮玩具车改造，属于实体DIY手工"
+  },
+  "BV1YQEFzpESm": {
+    "title": "跟车吸尾流",
+    "suggested_folder": "游戏",
+    "confidence": "低",
+    "reason": "可能为赛车游戏相关内容"
+  },
+  "BV1CYtLeCEAL": {
+    "title": "一辆保养很好的早期兰博基尼",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "汽车鉴赏无对应分类"
+  },
+  "BV1rjx2zEEwn": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无任何可分类信息"
+  },
+  "BV1ga5LzmESr": {
+    "title": "一个前妻，一个前女友，更在乎谁，一目了然",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "情感类搞笑对比，可能属于搞笑短剧"
+  },
+  "BV1ea4EztEgd": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无任何可分类信息"
+  },
+  "BV1uc4uzZEUq": {
+    "title": "筋肉美女爆衣变身暴揍修卡！变异修卡战斗员竟真的存在！《东岛丹三郎想成为假面骑士》第2集",
+    "suggested_folder": "奥特曼",
+    "confidence": "中",
+    "reason": "特摄剧集，与奥特曼系列相关，可归入奥特曼收藏夹"
+  },
+  "BV17v4wzHEyZ": {
+    "title": "蒂  法  摇  臀！！！",
+    "suggested_folder": "vam",
+    "confidence": "低",
+    "reason": "AI生成，蒂法为游戏角色，可能涉及VAM等虚拟模型，暂归vam"
+  },
+  "BV1Cn4Vz8EkU": {
+    "title": "他只是无意间看见儿子的裸体，却发现一个惊人的秘密《百年孤独》",
+    "suggested_folder": "纪录片",
+    "confidence": "低",
+    "reason": "影片解说可能涉及文学改编，但标题偏向猎奇，暂归纪录片"
+  },
+  "BV1b3411E79j": {
+    "title": "揭秘当初《迪迦》为何要创作中文版歌曲？——《永远的奥特曼》作者齐放老师访谈完整版【2022特摄拜年纪单品】",
+    "suggested_folder": "奥特曼",
+    "confidence": "高",
+    "reason": "迪迦奥特曼主题访谈，明确属于奥特曼系列"
+  },
+  "BV1kA4AzwE4k": {
+    "title": "平淡的幸福",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题模糊，无分类线索"
+  },
+  "BV1KsJ4zSEJ3": {
+    "title": "咖啡机如何进行反冲洗？怎么用咖啡机清洁粉？不洗咖啡机的话你就会得到......",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "咖啡制作与保养，属于饮食相关"
+  },
+  "BV1kJ4m1T7Di": {
+    "title": "丹泽尔华盛顿的爆笑神模仿！",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "演员模仿搞笑片段，明确搞笑"
+  },
+  "BV1H97mzYEJG": {
+    "title": "超癫俄国喜剧！当美女的屁股烙上铁匠的名字，这根本之印明明是凤仪自己盖的！一口气爽看俄国喜剧《三加三》",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "俄罗斯喜剧解说，搞笑类"
+  },
+  "BV1Xr4FzBEEj": {
+    "title": "[重制版] 俄语后朋克-《大东北我的家乡》-Северо-Восток, мой дом",
+    "suggested_folder": "音乐",
+    "confidence": "高",
+    "reason": "AI生成音乐，属于音乐创作"
+  },
+  "BV1n14czRE2o": {
+    "title": "凯尔特史诗-《大北境，我的家乡》Northlands, my heart's own home",
+    "suggested_folder": "音乐",
+    "confidence": "高",
+    "reason": "AI生成音乐，凯尔特风格歌曲"
+  },
+  "BV1W3bhz7E6C": {
+    "title": "#好物推荐之“咖啡锅”",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "咖啡制作器具推荐，饮食相关"
+  },
+  "BV1ydYqzLE3J": {
+    "title": "买不起咖啡机的野生咖啡人~",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "咖啡制作日常，饮食类"
+  },
+  "BV1E89QYXEWG": {
+    "title": "更好喝的摩卡壶咖啡？这本“秘笈”收好！",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "咖啡制作技巧，饮食"
+  },
+  "BV1TE421w7kH": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无法分类"
+  },
+  "BV1Uv4xzBEGx": {
+    "title": "不用称还手不碰面的懒人神奇面食",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "面食制作，属于饮食"
+  },
+  "BV1y8x1zSEQu": {
+    "title": "成本100元 DIY桌面充电站 用老的显卡8pin接口供电 电脑外接 支持PD3.1协议 公共协议拉满",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "DIY硬件，属于电子制作"
+  },
+  "BV1WYWVewEfZ": {
+    "title": "特朗普说“China”3分钟纯享版",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "政治人物言论剪辑，时事热点"
+  },
+  "BV1YA4m1P7o3": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无信息"
+  },
+  "BV1gGxrz2En6": {
+    "title": "别人无聊玩手机，我无聊玩闺蜜。",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "生活搞笑类视频"
+  },
+  "BV1oGnEzUEqa": {
+    "title": "树立正确价值观，骗子才会无从下手",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "价值观教育，社会思考类"
+  },
+  "BV1ahxyzcESP": {
+    "title": "算计中诞生不了爱情",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "情感哲理，社会思考"
+  },
+  "BV1RCxrzsEfR": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效，无法判断"
+  },
+  "BV1rbKJzdEtn": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效"
+  },
+  "BV1FXx6z8EVD": {
+    "title": "删共享家园，跪舔陪玩爹，千万玩家活该当血包？",
+    "suggested_folder": "游戏",
+    "confidence": "中",
+    "reason": "游戏社区运营批判，涉及网游家园系统"
+  },
+  "BV1HFp7zdEKc": {
+    "title": "追风小叶二审输麻了？判决竟成诬告保姆级教程？",
+    "suggested_folder": "时事",
+    "confidence": "中",
+    "reason": "社会事件评论，时事热点"
+  },
+  "BV1cFKAzkELM": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效，含奇怪备注但无实质内容"
+  },
+  "BV1xA411J7m8": {
+    "title": "嘿你丫的，是我，你爹",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "可能是搞笑配音或段子"
+  },
+  "BV1wUkxYsEdd": {
+    "title": "“喂，是杭州市公安局吗？我是中央许仕林～～～”",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "电话恶搞搞笑音频"
+  },
+  "BV1obZ6YtEda": {
+    "title": "李敖：台湾，500年后在中国史书上只能占一行字。",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "政治历史观点，时事相关"
+  },
+  "BV1QYnpzDEUL": {
+    "title": "500ml的水在兔娘手上显得那么大",
+    "suggested_folder": "妹汁",
+    "confidence": "低",
+    "reason": "兔娘可能指coser或虚拟主播，卖萌类，暂归妹汁"
+  },
+  "BV1EubfzpEUh": {
+    "title": "兔娘：好不容易垫的大大的，扣了我4分",
+    "suggested_folder": "妹汁",
+    "confidence": "低",
+    "reason": "同样兔娘相关，live2d或cosplay，归妹汁"
+  },
+  "BV1aDCYYFEJ9": {
+    "title": "民间汉化驯服官方——绿灯侠誓言翻译赏析",
+    "suggested_folder": "漫威/DC",
+    "confidence": "高",
+    "reason": "绿灯侠属于DC漫画，明确归类"
+  },
+  "BV1XsxQz7E4a": {
+    "title": "竞选口号JIBA应该怎么读？",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "可能涉及日本选举的搞笑解读"
+  },
+  "BV1QFeRz6Ebn": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效"
+  },
+  "BV1junqzeE3F": {
+    "title": "1499买高刷8gen3掌机？攻氪KONKR Pocket FIT ROOT折腾全能指南[指北]",
+    "suggested_folder": "游戏",
+    "confidence": "高",
+    "reason": "掌机ROOT和刷机教程，游戏硬件/软件"
+  },
+  "BV1qcxRzhEsn": {
+    "title": "sora2生成的哈基米校领导讲话",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "OpenAI Sora生成视频，明确AI相关"
+  },
+  "BV14qxKzkEAz": {
+    "title": "sora2生成的哈基米山东酒局",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "AI生成视频"
+  },
+  "BV1kGHJzaEhS": {
+    "title": "大花痴",
+    "suggested_folder": "vam",
+    "confidence": "低",
+    "reason": "MMD视频，可能属于VAM或3D，暂归vam"
+  },
+  "BV1qXxLzpEGp": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效，简介含模型信息但无法分类"
+  },
+  "BV1B5xMzKEAe": {
+    "title": "《17Pro Max美版改卡神操作：Open the door！邪修我只认华强北😂》",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "手机硬件改造，华强北技术，归硬件"
+  },
+  "BV17L82z9E1d": {
+    "title": "年度最强综？天选综艺人！爆笑到喷饭！有没有人能救救陈星旭！《地球超新鲜》",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "综艺搞笑剪辑，幽默推荐"
+  },
+  "BV1hKxTzXEwe": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效"
+  },
+  "BV1VQJSz8Eem": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效"
+  },
+  "BV1NSptzAEZf": {
+    "title": "仅5L容积，史上最小5090 ITX核弹机箱",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "ITX机箱DIY，硬件装机"
+  },
+  "BV13utyzAEmn": {
+    "title": "一不注意就跨越了半个冰场，连热身都如此超高速",
+    "suggested_folder": "武/健",
+    "confidence": "中",
+    "reason": "可能为滑冰训练或体育相关内容，归入武/健"
+  },
+  "BV11bvNzhEBn": {
+    "title": "我换了台超强电脑！又小又快又静音！",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "ITX装机，硬件升级"
+  },
+  "BV1e2HjzrEcZ": {
+    "title": "Process Lasso提高稳定性又能降低延迟? 双显卡补帧测试对比演示+设置分享",
+    "suggested_folder": "软件",
+    "confidence": "高",
+    "reason": "系统优化软件教程，软件类"
+  },
+  "BV1jHn1ztEqo": {
+    "title": "五年了，你知道我有多想这道肥肠鱼",
+    "suggested_folder": "食",
+    "confidence": "高",
+    "reason": "美食UP主食贫道制作，明确为肥肠鱼美食内容"
+  },
+  "BV1KQW3zDE36": {
+    "title": "连续3天不卸妆，我的皮肤发生了什么……",
+    "suggested_folder": "学习",
+    "confidence": "中",
+    "reason": "化妆品对皮肤影响的科普实验，属于知识类视频"
+  },
+  "BV1RcpRzSEi4": {
+    "title": "都把兔娘搞破防了",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题显示为搞笑或整蛊内容，UP名也带调侃意味"
+  },
+  "BV1DqWuzHE1r": {
+    "title": "分析有理有据，这届网友都这么强嘛",
+    "suggested_folder": "时事",
+    "confidence": "低",
+    "reason": "可能为热点事件评论分析，UP主‘蜜瓜蛋饭’常做社会评论"
+  },
+  "BV16upyzeEPP": {
+    "title": "3000℃尾焰！来看一次绝密航天？探访航天级黑科技？",
+    "suggested_folder": "航空航天",
+    "confidence": "高",
+    "reason": "标题直接提及航天和黑科技，内容明确属于航空航天领域"
+  },
+  "BV1RMHXzVEEK": {
+    "title": "家是讲爱的地方，不是讲理的地方？",
+    "suggested_folder": "思考",
+    "confidence": "低",
+    "reason": "可能为情感或人生感悟类内容"
+  },
+  "BV1yjbAzgE7y": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，备注信息不明确，无法判断内容"
+  },
+  "BV1pcHozvE54": {
+    "title": "蜘蛛侠也这么会玩",
+    "suggested_folder": "漫威/DC",
+    "confidence": "高",
+    "reason": "标题含蜘蛛侠，明确属于漫威题材"
+  },
+  "BV1qQ4y1b71K": {
+    "title": "一个日本女人，如何让以色列破防？",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "涉及国际政治与以色列相关话题，属于时事评论"
+  },
+  "BV126pYzCEwW": {
+    "title": "这要是我媳妇我也换着花样玩儿",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题口吻轻松幽默，推测为搞笑短视频"
+  },
+  "BV1X4pczAEH5": {
+    "title": "”日本刀就这样，砍竹子一挥就能斩断，但是砍铜板，一刀下去就卷刃！“",
+    "suggested_folder": "电影",
+    "confidence": "中",
+    "reason": "UP主‘Bili好片放映室’通常发布电影片段或解说"
+  },
+  "BV1nLaSzMEdj": {
+    "title": "英国大学生请艳星拍电影，结果一拍成名拿大奖，欧美爆笑喜剧片",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "备注明确为电影解说，属于影视类别"
+  },
+  "BV1fqhhzjEmT": {
+    "title": "DRIZZLELAW 《六角亭》",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "标题和备注带有戏谑语气，可能为搞笑类视频"
+  },
+  "BV1Z4YAzTEM2": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "高",
+    "reason": "视频已失效，无法判断内容"
+  },
+  "BV11oaYzNEyx": {
+    "title": "《Stella的唯物主义¹²：部署》",
+    "suggested_folder": "漫",
+    "confidence": "中",
+    "reason": "备注为原创短片动画，适合动漫相关收藏"
+  },
+  "BV1QwHyzLEMV": {
+    "title": "原来小猫是配音演员啊！！！",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "以猫配音为噱头，可能属于搞笑萌宠类"
+  },
+  "BV1xtHCzzEJp": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "高",
+    "reason": "视频已失效，账号已注销，无法判断内容"
+  },
+  "BV1MCHQzhEAD": {
+    "title": "印度发动一级战备",
+    "suggested_folder": "时事",
+    "confidence": "中",
+    "reason": "标题涉及军事时事，可能为新闻或评论"
+  },
+  "BV1q6e4zzEGN": {
+    "title": "梦到什么说什么",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "UP主为抽象搞笑类，标题风格轻松"
+  },
+  "BV1rwhqzvEWJ": {
+    "title": "完美的丈夫",
+    "suggested_folder": "学习",
+    "confidence": "中",
+    "reason": "UP主名称含教英语，标题可能为英语学习内容"
+  },
+  "BV1A1bbzjEos": {
+    "title": "女朋友日常相处很好，怎么一到谈婚论嫁就狮子大开口？",
+    "suggested_folder": "观察",
+    "confidence": "高",
+    "reason": "讨论婚恋社会现象，符合观察类收藏夹定位"
+  },
+  "BV1AHaGzzEDc": {
+    "title": "全球首个“AI牛马”劳务市场",
+    "suggested_folder": "ai agent",
+    "confidence": "高",
+    "reason": "内容明确介绍AI Agent市场和构建工具"
+  },
+  "BV1CxtczaEUj": {
+    "title": "【抗日英烈录·罗伯特·肖特】 伟大的国际战士罗伯特肖特，为保护中国人不幸牺牲，50万国人送葬。",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "历史题材，无专门匹配收藏夹"
+  },
+  "BV1fKJgzoEcW": {
+    "title": "中国男女关系会跟日服一样，互相仇恨，不婚不育，女性失业，风俗业部分合法",
+    "suggested_folder": "观察",
+    "confidence": "中",
+    "reason": "社会现象观察评论，UP主名含观察"
+  },
+  "BV1NNtmzYEoK": {
+    "title": "4倍硬拉快了吗",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "硬拉属于健身力量训练"
+  },
+  "BV1ktebzxEdm": {
+    "title": "脖子紧、头晕、后脑发胀？5个动作搞定他！",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "康复健身动作教学"
+  },
+  "BV1D6hozgEft": {
+    "title": "拥有气吞山河气势的实力派美女，哥伦比亚亚裔演员Veronica Leal",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "介绍成人女演员，可能属于美女/写真类"
+  },
+  "BV12AYWz5EqK": {
+    "title": "坏了 让他装到了",
+    "suggested_folder": "搞笑",
+    "confidence": "高",
+    "reason": "标题语境为搞笑内容"
+  },
+  "BV1T1VwzqEQx": {
+    "title": "“你与我先谈养心殿 后拜瀑淋身”",
+    "suggested_folder": "黑神话",
+    "confidence": "高",
+    "reason": "台词出自黑神话悟空"
+  },
+  "BV1yvVqzcEDj": {
+    "title": "冷这个字你们是一句也不提啊",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "调侃语气，可能为搞笑段子"
+  },
+  "BV17ghqzFEeU": {
+    "title": "还是阿兰",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "内容不明，备注google无明确指向"
+  },
+  "BV1fHe8zJEb3": {
+    "title": "《身 法 危 机》",
+    "suggested_folder": "游戏",
+    "confidence": "中",
+    "reason": "标题疑似游戏相关内容"
+  },
+  "BV1PXhozAEom": {
+    "title": "算命的说我是一将功成万骨枯！",
+    "suggested_folder": "Hp",
+    "confidence": "高",
+    "reason": "备注提及巫师、麻瓜，属于哈利波特"
+  },
+  "BV1JEtozyEuH": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效，无法判断内容"
+  },
+  "BV1UteyzrE6u": {
+    "title": "美国电影《Kayley Gunner, Nicole Doshi》",
+    "suggested_folder": "妹汁",
+    "confidence": "中",
+    "reason": "演员可能为成人电影演员"
+  },
+  "BV1C2hXzSEjK": {
+    "title": "咪有自己的手办转场🧸",
+    "suggested_folder": "手办",
+    "confidence": "高",
+    "reason": "标题明确提到手办"
+  },
+  "BV1cY411N75u": {
+    "title": "荷兰弟对她真的毫不掩饰的夸赞，奥妹真的太美了",
+    "suggested_folder": "漫威/DC",
+    "confidence": "高",
+    "reason": "奥妹是漫威角色绯红女巫"
+  },
+  "BV1GbhXzAERa": {
+    "title": "粉丝里  有高人",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "难以判断具体类型"
+  },
+  "BV173hqzbENv": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效，UP名暗示宠物但不确定"
+  },
+  "BV12JeBzXE4g": {
+    "title": "亲子鉴定不能帮助出轨者！ 两子皆非亲生的丈夫打赢官司",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "社会热点事件，婚姻家事法律话题"
+  },
+  "BV1fyYSz3EDQ": {
+    "title": "女粉丝《论中国脱口秀的倒掉》的读后感，看正常女性是如何看待女权脱口秀的",
+    "suggested_folder": "观察",
+    "confidence": "中",
+    "reason": "社会观察类内容，评论脱口秀现象"
+  },
+  "BV1u2YtzhEye": {
+    "title": "武侠/COS向（半身/特写/对峙/开战）",
+    "suggested_folder": "漫",
+    "confidence": "高",
+    "reason": "武侠COSPLAY属于动漫相关装扮"
+  },
+  "BV1P4e7ztEnC": {
+    "title": "新世纪穿搭战士之碇唯篇",
+    "suggested_folder": "漫",
+    "confidence": "高",
+    "reason": "EVA动漫角色碇唯的穿搭还原，属于动漫COS"
+  },
+  "BV165bhzLEoE": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，信息不足"
+  },
+  "BV1QYeTzkEoE": {
+    "title": "好莱坞那些绝美的冷门女神！",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "介绍好莱坞女演员，属于电影相关"
+  },
+  "BV1JiY1zwE2G": {
+    "title": "有种人生来就该当清洁工和建筑工的？",
+    "suggested_folder": "观察",
+    "confidence": "中",
+    "reason": "社会现象评论"
+  },
+  "BV1JLe8zWEoa": {
+    "title": "“本职就是找小姐”",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "电视剧搞笑片段，标题有喜剧色彩"
+  },
+  "BV1NQeuzuEeV": {
+    "title": "如何正确探望生病的上级/领导/长辈/导师",
+    "suggested_folder": "学习",
+    "confidence": "高",
+    "reason": "职场礼仪教学类知识"
+  },
+  "BV1D3bTzFEzV": {
+    "title": "答应我，下次路演不要那么热了好吗",
+    "suggested_folder": "音乐",
+    "confidence": "中",
+    "reason": "视频为Aespa歌曲舞蹈表演，属于音乐类内容"
+  },
+  "BV1KHY1zrECT": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无可用分类信息"
+  },
+  "BV1wQbJzHEBp": {
+    "title": "欢迎来到主理人炼厂，有预约吗",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "中国石化发布趣味短剧，风格搞笑"
+  },
+  "BV1CKgwzpEhn": {
+    "title": "🔥2025政治惊悚神剧《冲突》女总统的致命棋局！",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "影视剧解说推荐，明确为电影/剧集类"
+  },
+  "BV17ubszsEyU": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无可用分类信息"
+  },
+  "BV1V6bqzQE61": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无可用分类信息"
+  },
+  "BV1f6421Z7dB": {
+    "title": "来看看朱迪·福斯特的荧幕颜值变化",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "演员朱迪·福斯特影视剪辑，属于电影类"
+  },
+  "BV1fphwzPEXg": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，无可用分类信息"
+  },
+  "BV18Ztxz2EkS": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效且无有效信息，无法归类"
+  },
+  "BV1DQhbzFE4v": {
+    "title": "8月2日",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题和备注无明确分类线索"
+  },
+  "BV1vC8mzWE9b": {
+    "title": "rachel loren",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "仅有人名，无法判断内容类别"
+  },
+  "BV17UtzzcEmR": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效且UP主已注销，无信息"
+  },
+  "BV1G5tUzLEkP": {
+    "title": "【补档】文科学阀买办和境外势力如何夺舍中国妇女解放【月鸽说】",
+    "suggested_folder": "时事",
+    "confidence": "中",
+    "reason": "讨论社会政治话题，属于时事评论范畴"
+  },
+  "BV13Ft6zXEeL": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频失效，无内容可判断"
+  },
+  "BV17Jt1zLEqH": {
+    "title": "怎么防止被诬陷偷拍？",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "法律知识类，无完全匹配收藏夹"
+  },
+  "BV1Mmt4zVEVY": {
+    "title": "“莫蒂，欢迎来到刻板印象宇宙...”",
+    "suggested_folder": "ai/chatgpt",
+    "confidence": "高",
+    "reason": "明确为AI制作的动画内容，涉及AI技术应用"
+  },
+  "BV1GVt2zMEZF": {
+    "title": "托人办事送礼全流程SOP",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "社会经验类，无对应收藏夹"
+  },
+  "BV1R6tHzkESM": {
+    "title": "一看到底",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "标题信息不足，无法判断"
+  },
+  "BV1DpttzEEd5": {
+    "title": "普京托美国特使向中情局高官转交勋章，后者儿子为俄方战斗阵亡",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "国际时事新闻，涉及美俄政治"
+  },
+  "BV1Vc8uzzE1s": {
+    "title": "blender晶格修改器教程",
+    "suggested_folder": "Blender",
+    "confidence": "高",
+    "reason": "标题和备注均指向Blender软件教程"
+  },
+  "BV1dWt1zrE2k": {
+    "title": "如果你也喜欢Hot Nerd、高智感穿搭、Office Siren…| GeekChic风格全解析与3大造型思路",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "时尚穿搭类，无匹配收藏夹"
+  },
+  "BV1qou2zAEjc": {
+    "title": "青蛙趴腿部伸展｜美丽的瑜伽",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "瑜伽健身教学，明确属于武术/健身"
+  },
+  "BV1xdhPzJEa6": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "已失效且无有效信息，无法归类"
+  },
+  "BV1ZAu9zpEqc": {
+    "title": "苏联特工用的相机，1961年基辅维嘉2微型胶片相机，Kiev Vega-2 16mm胶卷相机。电影《伯德埃波要塞》里格勒乌特工用的就是这款。",
+    "suggested_folder": "摄影",
+    "confidence": "高",
+    "reason": "介绍特工相机，属于摄影器材内容"
+  },
+  "BV1T2hVz7EU9": {
+    "title": "猜你爱看",
+    "suggested_folder": "vam",
+    "confidence": "高",
+    "reason": "备注模型为mihoyo/yunabao动作，明确属于VAM视频"
+  },
+  "BV1Q5hGzJErU": {
+    "title": "学会把敌人的朋友、变成自己的朋友",
+    "suggested_folder": "思考",
+    "confidence": "中",
+    "reason": "标题和关联词涉及人性、情感，适合思考类内容"
+  },
+  "BV1oJhEzgE1P": {
+    "title": "为什么很多男的喜欢自驾带女友来上海玩？市区不开车，只坐一站地铁！花更少的钱，逛最精华的地段，上代表城市文明的公厕！",
+    "suggested_folder": "观察",
+    "confidence": "低",
+    "reason": "生活观察类，无明确匹配，暂归观察"
+  },
+  "BV1VS8LzFE6w": {
+    "title": "盆底肌训练的最大骗局#运动康复 #盆底肌修复 #漏尿#痔疮",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "运动康复训练，属于健身健康"
+  },
+  "BV1do8Yz7Eqw": {
+    "title": "拳军出击！没有敌军，学会格斗保护自己！",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "标题直接提及格斗和自我保护，匹配武术健身类"
+  },
+  "BV1p2421Z7jc": {
+    "title": "［迪迦奥特曼］我看居间惠队长也是风韵犹存啊",
+    "suggested_folder": "奥特曼",
+    "confidence": "高",
+    "reason": "标题明确包含迪迦奥特曼"
+  },
+  "BV1xaQiYEEdU": {
+    "title": "［迪迦奥特曼］请选择你的天气版居间惠队长",
+    "suggested_folder": "奥特曼",
+    "confidence": "高",
+    "reason": "标题明确包含迪迦奥特曼"
+  },
+  "BV1BPhcztE9r": {
+    "title": "我下次再也不敢啦！！",
+    "suggested_folder": "奥特曼",
+    "confidence": "中",
+    "reason": "UP主名为天台赛罗，赛罗是奥特曼角色，推测内容相关"
+  },
+  "BV13jhczJExD": {
+    "title": "白月光丝绸VS初恋粉半裙！这搭配美到失语",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "时尚穿搭类内容，无匹配的现有收藏夹"
+  },
+  "BV16X82ztE3W": {
+    "title": "刘慈欣：我只是个写小说的，你们不能真把我当科学家",
+    "suggested_folder": "科幻",
+    "confidence": "高",
+    "reason": "刘慈欣是著名科幻作家，视频主题与科幻直接相关"
+  },
+  "BV1L681zmEsf": {
+    "title": "尊湃事件尘埃落定，核心成员全部有期徒刑。",
+    "suggested_folder": "问题_科技",
+    "confidence": "中",
+    "reason": "尊湃为科技公司侵权案，属于科技行业的负面事件"
+  },
+  "BV1mrbQz7EbK": {
+    "title": "行走不良:骑行种",
+    "suggested_folder": "鬼畜",
+    "confidence": "高",
+    "reason": "备注中自述为美式鬼畜视频，且标题风格为鬼畜"
+  },
+  "BV1Ba8CzLE7m": {
+    "title": "我在白宫听到中国国歌，一路寻找到了歌声来源",
+    "suggested_folder": "美国",
+    "confidence": "高",
+    "reason": "地点为白宫，UP主专注于美国见闻"
+  },
+  "BV1XM4m1o7bv": {
+    "title": "10年前秦朔采访雷军，现在来看雷军的格局眼界令人叹为观止！",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "内容涉及雷军及商业格局，可归为科技创新或大佬，选科技创新"
+  },
+  "BV1ZekmYVEtc": {
+    "title": "【访谈】雷军接受采访回答：小米为什么不搞个子品牌造车？",
+    "suggested_folder": "新能源汽车",
+    "confidence": "高",
+    "reason": "直接讨论小米造车策略"
+  },
+  "BV1tu4y1Y7Y8": {
+    "title": "雷军这段神预言采访，我能看一天！",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "雷军采访片段，涉及未来预判，与科技商业相关"
+  },
+  "BV1A5yWYoE8F": {
+    "title": "雷军：你这个记者提问的很好啊。",
+    "suggested_folder": "科技创新",
+    "confidence": "中",
+    "reason": "雷军采访片段，与科技企业相关"
+  },
+  "BV1jAubzjENN": {
+    "title": "油管：日本网友看三国演义名场面，不愧是中华文化圈小弟",
+    "suggested_folder": "三国",
+    "confidence": "高",
+    "reason": "标题明确为三国演义相关"
+  },
+  "BV1Tn8ozcEzi": {
+    "title": "夏季的鲢鳙，力气手感之间拉满～～",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "钓鱼类视频，无对应收藏夹"
+  },
+  "BV1n38AzqEXw": {
+    "title": "回归母系社会？来东南亚！",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "泛文化旅行讨论，无明确对应收藏夹"
+  },
+  "BV1eG411A7Qf": {
+    "title": "宁理发台湾话真是太机车了！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "语言误会类搞笑内容"
+  },
+  "BV179bmzXEQq": {
+    "title": "8000转，2咪车，不可能的直角弯《头文字D》后最佳港产飙车戏 | 漫谈银河映像电影《车手》",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "明确为电影解说，且标题含影片名《车手》"
+  },
+  "BV1VAoBYyEJF": {
+    "title": "「手提电脑」最猛的一次！RTX 5090 D 白火神+水神！",
+    "suggested_folder": "硬件",
+    "confidence": "高",
+    "reason": "介绍高端显卡，属于电脑硬件内容"
+  },
+  "BV1UE411S7xs": {
+    "title": "挑战1天内如何劝退一位想做UP主的美女？！",
+    "suggested_folder": "搞笑",
+    "confidence": "中",
+    "reason": "生活挑战类搞笑视频"
+  },
+  "BV1DX5qzkEor": {
+    "title": "何立峰会见美国英伟达公司总裁兼首席执行官黄仁勋",
+    "suggested_folder": "时事",
+    "confidence": "高",
+    "reason": "央视新闻发布的时政要闻"
+  },
+  "BV1DRbXz4EY6": {
+    "title": "你想知道的关于Switch 2的一切",
+    "suggested_folder": "游戏",
+    "confidence": "高",
+    "reason": "游戏主机Switch 2的深度评测"
+  },
+  "BV1H38AzqEzX": {
+    "title": "完爆《阿诺拉》致敬《五十度灰》西班牙顶级青涩片，变态总裁爱上我《告诉我你想要什么》",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "电影解说，直接提及多部影片名"
+  },
+  "BV1TDgJzjERu": {
+    "title": "进来听剑和锤的破空声，有什么不同？训练第6001天",
+    "suggested_folder": "武/健",
+    "confidence": "高",
+    "reason": "冷兵器训练与武术展示"
+  },
+  "BV1Vt421p7iM": {
+    "title": "央视天气主持人刘康，紧身套裙尽显魔鬼身材，热辣主持《天气体育》",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "主持人身材展示，无合适收藏夹"
+  },
+  "BV1KCutzcEkk": {
+    "title": "2025.7.15日报第一集（完美统一）共二集",
+    "suggested_folder": "时事",
+    "confidence": "中",
+    "reason": "标题暗示政治统一话题，可能涉及时事评论"
+  },
+  "BV1uZ421t72U": {
+    "title": "那些演完一部戏后就马上消失不见的绝美女星！",
+    "suggested_folder": "电影",
+    "confidence": "低",
+    "reason": "盘点昔日女星，泛影视类内容"
+  },
+  "BV1CAbfz4Ee8": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，内容未知"
+  },
+  "BV1HWgHzkECJ": {
+    "title": "已失效视频",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "视频已失效，内容未知"
+  },
+  "BV1Pm3JzGEcc": {
+    "title": "星级尺度美剧中的冷门亚裔女星——身材迷人日裔 艾米莉·皮格福德&华裔女星 余咏瑶",
+    "suggested_folder": "电影",
+    "confidence": "高",
+    "reason": "美剧演员盘点，影视相关内容"
+  },
+  "BV194uDzuE2S": {
+    "title": "当爱意凋零",
+    "suggested_folder": "默认收藏夹",
+    "confidence": "低",
+    "reason": "情感文案类，无明确分类"
+  },
+  "BV1JJ4m1b7nr": {
+    "title": "装逼不用嘴，出手即巅峰",
+    "suggested_folder": "搞笑",
+    "confidence": "低",
+    "reason": "标题风格疑似搞笑或炫技，无明确分类线索，归入搞笑"
+  },
+  "BV1k2tYeZEMc": {
+    "title": "“不要瞧不起任何人，因为他可以让你一夜之间变成穷光蛋。”",
+    "suggested_folder": "思考",
+    "confidence": "低",
+    "reason": "正能量语录，可能属于人生思考类"
   }
 }

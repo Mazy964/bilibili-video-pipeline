@@ -13,7 +13,7 @@ Usage:
   fav-report.py --vault <path>         # 自定义 Obsidian vault 路径
 
 数据来源:
-  cache/fav-classify.json             — 分类建议
+  cache/fav-classify-final.json         — 最终分类（含LLM+分区+手工）
   ~/videos/_fav_check/fav_dead_*.json — 失效检测 (取最新一份)
   ~/videos/.fav-state.json            — 下载记录
   cache/fav-videos.json               — 收藏夹全量视频列表
@@ -30,7 +30,7 @@ os.environ["PYTHONUNBUFFERED"] = "1"
 ROOT = os.path.dirname(os.path.abspath(__file__))
 CACHE_DIR = os.path.join(ROOT, "..", "cache")
 
-CLASSIFY_FILE  = os.path.join(CACHE_DIR, "fav-classify.json")
+CLASSIFY_FILE  = os.path.join(CACHE_DIR, "fav-classify-final.json")
 VIDEOS_FILE    = os.path.join(CACHE_DIR, "fav-videos.json")
 DEADLINK_GLOB  = os.path.expanduser("~/videos/_fav_check/fav_dead_*.json")
 STATE_FILE     = os.path.expanduser("~/videos/.fav-state.json")
