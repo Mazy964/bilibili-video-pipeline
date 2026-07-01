@@ -1,0 +1,50 @@
+{
+  "BV1Test001": {
+    "title": "深入理解 React 18 并发特性",
+    "suggested_folder": "前端",
+    "confidence": "高",
+    "reason": "标题明确为前端框架 React 内容"
+  },
+  "BV1Test002": {
+    "title": "【全程干货】Linux 内核网络协议栈源码分析",
+    "suggested_folder": "操作系统",
+    "confidence": "高",
+    "reason": "Linux 内核源码属于操作系统范畴"
+  },
+  "BV1Test003": {
+    "title": "2024 前端性能优化实战指南",
+    "suggested_folder": "前端",
+    "confidence": "中",
+    "reason": "前端性能优化，可能归入性能优化类"
+  },
+  "BV1Test004": {
+    "title": "Rust 异步编程：从 Future 到 Tokio",
+    "suggested_folder": "编程语言",
+    "confidence": "高",
+    "reason": "Rust 语言特性教学"
+  },
+  "BV1Test005": {
+    "title": "数据库内核：B+树索引实现原理",
+    "suggested_folder": "数据库",
+    "confidence": "高",
+    "reason": "数据库内核索引实现"
+  },
+  "BV1Test006": {
+    "title": "数学之美：傅里叶变换的可视化理解",
+    "suggested_folder": "数学",
+    "confidence": "中",
+    "reason": "数学科普类内容"
+  },
+  "BV1Test007": {
+    "title": "如何打造高效的技术团队",
+    "suggested_folder": "管理",
+    "confidence": "低",
+    "reason": "技术管理类，信息不足"
+  },
+  "BV1Test008": {
+    "title": "C++20 Concepts 实战教程",
+    "suggested_folder": "编程语言",
+    "confidence": "高",
+    "reason": "C++ 语言新特性教程"
+  }
+}
