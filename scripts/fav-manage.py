@@ -197,6 +197,9 @@ def merge_folders(src_mlid, dst_mlid):
 
     # Get source BVIDs
     bvids = get_folder_videos(src_mlid)
+    
+    if dst_count + len(bvids) > 999:
+        return 0, False, f"合并后 {dst_count}+{len(bvids)}={dst_count+len(bvids)} > 999，拒绝操作（保留源夹）"
     print(f"  → 源夹 {len(bvids)} 个视频")
 
     if not bvids:

@@ -25,6 +25,25 @@ title=🧪测试&intro=&privacy=0&cover=&csrf=xxx
 ```
 `data.id` 即为该文件夹的 mlid（完整 media_id）。
 
+## 编辑/改名收藏夹
+
+```
+POST https://api.bilibili.com/x/v3/fav/folder/edit
+Content-Type: application/x-www-form-urlencoded
+
+media_id=111506717&title=新名字&csrf=xxx
+```
+
+| 参数 | 类型 | 必填 | 说明 |
+|------|------|------|------|
+| media_id | str | 是 | 要改名的文件夹 mlid |
+| title | str | 是 | 新名字 |
+| csrf | str | 是 | Cookie中的bili_jct |
+
+成功响应：`{"code": 0, "message": "OK"}`。
+
+> ✅ 实测可用。以前以为 B站没有改名 API，实际有 `folder/edit`。比创建新夹+全量迁移+删旧夹高效得多。
+
 ## 删除收藏夹
 
 ```
