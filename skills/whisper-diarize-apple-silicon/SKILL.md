@@ -10,16 +10,17 @@ category: mlops
 
 ```
 B站视频 URL
- ├─ 1. 先搜 API 字幕（view API → player/wbi/v2 + aid+cid + Safari cookie）
- │   ├─ 有 CC 字幕 → 直接下载 JSON → 纯文本输出（<1秒，质量好）
- │   ├─ 只有 AI 字幕 → 质量差（碎片化/噪音），不推荐
- │   └─ 无字幕 → 进入本地 ASR
- └─ 2. 本地 ASR
-     ├─ 下载音频（B站 API + aria2c，不用 yt-dlp cookie）
+ ├─ 1. 先搜 API 字幕（view API → CC字幕）
+ │   ├─ 有 CC 字幕 → 下载 JSON → 纯文本（<1秒）
+ │   └─ 无字幕 → 进入步骤2
+ ├─ 2. 下载音频（yt-dlp+cookie → curl → aria2c 降级）
+ └─ 3. 本地 ASR
      ├─ faster-whisper BatchedInferencePipeline (batch_size=16, float32)
-     ├─ pyannote MPS diarization（可选，79s for 37min）
-     └─ LLM 总结
+     ├─ pyannote MPS diarization（可选）
+     └─ LLM 总结 → Obsidian
 ```
+
+**并行辅助**：下载音频的同时可 web_search "UP主 + 标题关键词 + 总结" 拿第三方文字版作为**参考补充**（快科技、腾讯新闻等）。但 ⚠️ **第三方文字版可能被编辑加工/夹带私货，不能替代原视频的原文转录**。web 版仅用于交叉验证和补充背景，音频转录始终是必须的。
 
 ## 第一步：获取字幕（Safari Cookie）
 
@@ -46,14 +47,56 @@ ai_subs = json.loads(r2.stdout)['data']['subtitle']['subtitles']
 
 ## 第二步：下载音频（无字幕时）
 
+**按顺序降级尝试：**
+
+### ① yt-dlp + Safari Cookie（首选，解决 412 认证）
+```bash
+# 先导出 Safari cookie
+python3 -c "
+import browser_cookie3, os
+cj = browser_cookie3.safari(domain_name='bilibili.com')
+with open(os.path.expanduser('~/.hermes/bilibili_cookies_netscape.txt'),'w') as f:
+    f.write('# Netscape HTTP Cookie File\n')
+    for c in cj:
+        if 'bilibili' in (c.domain or '') or 'bilivideo' in (c.domain or ''):
+            dom = c.domain if c.domain.startswith('.') else '.'+c.domain
+            f.write(f'{dom}\tTRUE\t{c.path}\t{\"TRUE\" if c.secure else \"FALSE\"}\t{c.expires or 0}\t{c.name}\t{c.value}\n')
+"
+
+yt-dlp --cookies ~/.hermes/bilibili_cookies_netscape.txt \
+  -f 30280 --no-playlist -o ~/videos/.../audio.m4a \
+  https://www.bilibili.com/video/BV...
+```
+格式 `30280` 是 ~178kbps m4a 音频（`-F` 可查所有格式）。
+
+### ② B站 API + curl（备选，SSL兼容性好）
 ```python
 play = json.loads(subprocess.run(['curl', '-s',
     f'https://api.bilibili.com/x/player/playurl?bvid={bvid}&cid={cid}&fnval=80&fourk=1'],
     capture_output=True, text=True).stdout)['data']
-audio_url = sorted(play['dash']['audio'], key=lambda x: x['bandwidth'], reverse=True)[0]['base_url']
-subprocess.run(['aria2c', '-x4', '-s4', '--referer=https://www.bilibili.com',
-    '-d', outdir, '-o', 'audio.m4a', audio_url])
+# ⚠️ 优先选最低码率（CDN对低码率分配快节点，转录质量完全够用）
+audio = sorted(play['dash']['audio'], key=lambda x: x['bandwidth'])[0]['base_url']
+subprocess.run(['curl', '-L', '--retry', '3',
+    '-H', 'Referer: https://www.bilibili.com',
+    '-o', f'{outdir}/audio.m4a', audio_url])
 ```
+
+### ③ aria2c（多路并行，低码率首选）
+```bash
+# 低码率97kbps → 11MiB/s实测，32MB→2秒
+aria2c -x16 -s16 -k1M --referer=https://www.bilibili.com -o audio.m4a <URL>
+```
+
+### CDN速度实测（2026-07）
+
+B站CDN (`upos-sz-mirrorcosov.bilivideo.com`) 速度因码率/时间段差异巨大：
+
+| 码率 | 大小 | 速度 | 耗时 |
+|------|------|------|------|
+| 97kbps | ~12MB | **11MiB/s** | ~2s |
+| 177kbps | ~32MB | **288KiB/s** | ~2min |
+
+**策略**：先试最高码率 `aria2c -x16 --allow-overwrite`。若 >2min 无进展，**立刻切最低码率** — 97kbps AAC 对语音转录完全够用。yt-dlp 无 cookie → 412；带 Safari cookie 可过。
 
 ## 第三步：本地 ASR (BatchedInferencePipeline)
 
@@ -78,10 +121,12 @@ turns = [(float(t.start), float(t.end), str(s)) for t, _, s in diar.itertracks(y
 
 ## 第五步：LLM 总结 → Obsidian
 
-脚本：`~/.hermes/scripts/transcript-to-obsidian.py`
-- DeepSeek API 精炼 → 结构化 Obsidian 笔记
-- 核心概念 / 内容精要 / 关键引用 / 术语词条
-- 输出到 iCloud Obsidian vault
+可复用脚本：`scripts/transcribe-summarize.py` —— 转录 + DeepSeek 总结，一键完成。
+
+```bash
+python3 scripts/transcribe-summarize.py ~/videos/xxx/audio.m4a "视频标题"
+# → transcript_raw.txt + transcript.md
+```
 
 ## 关键 API
 
@@ -91,13 +136,38 @@ turns = [(float(t.start), float(t.end), str(s)) for t, _, s in diar.itertracks(y
 | `x/player/wbi/v2` | aid, cid | AI字幕（需要cookie） |
 | `x/player/playurl` | bvid, cid, fnval=80 | 音频流地址 |
 
+## 扩展：B站收藏夹管理
+
+详见 `references/bilibili-fav-api.md` — 收藏夹列表、视频内容、批量操作、删除/移动 API。
+
+脚本：`scripts/fav-monitor.py`, `scripts/fav-classify.py`, `scripts/fav-deadlink.py`, `scripts/fav-report.py`
+
 ## 避坑
 
-1. yt-dlp cookie 卡死 → B站 API + aria2c
-2. player/v2 无 AI 字幕 → 用 player/wbi/v2 + aid+cid
-3. B站 AI 字幕质量差 → 优先本地 large-v3 ASR
-4. pyannote 4.x generator → StopIteration.value.speaker_diarization
-5. float32 单核 → BatchedInferencePipeline 才对
+1. yt-dlp 412 → 用 Safari cookie（`browser_cookie3.safari` → Netscape格式）
+2. aria2c SSL 握手失败 → 降级到 curl 下载
+3. B站CDN慢（~16KiB/s）→ 先试 yt-dlp + cookie，不行降级到最低码率（97kbps 语音够用），不要放弃下载切 web 版
+4. player/v2 无 AI 字幕 → 用 player/wbi/v2 + aid+cid
+5. B站 AI 字幕质量差 → 优先本地 large-v3 ASR
+6. pyannote 4.x generator → StopIteration.value.speaker_diarization
+8. PyYAML 版本兼容：`yaml.safe_load(stream)` vs `yaml.safe_load(open(path))` — 始终用后者（传文件对象而非字符串）
+9. ⚠️ 第三方文字版（快科技、腾讯新闻等）= 编辑二次加工，可能夹带私货/选择性引用/数据失真。只能做参考补充和交叉验证，不能替代原视频的完整原文转录。音频下载+ASR 始终是必须的主路径。
+
+### 辅助参考：web_search 第三方文字版
+
+下载音频的同时可并行 web_search 拿第三方文字版作为**补充参考**：
+```
+web_search("UP主名 + 视频标题 + 总结")
+→ 快科技(mydrivers)、腾讯新闻、电玩帮 等常有时序文字版
+```
+
+⚠️ **第三方文字版 = 编辑加工产物，可能夹带私货/选择性引用/遗漏关键数据。** 仅用于交叉验证和补充背景信息，不能替代原视频的完整原文转录。音频下载 + ASR 始终是必须的主路径。
+
+## 多 Agent 自动流水线（Kanban）
+
+拆成 transcriber / obsidian-writer / reviewer 三个 profile，Kanban 看板自动级联执行。你只需说一句"处理这个视频"。
+
+详见 `references/kanban-multi-agent.md`
 
 ## 性能 (M1 Max)
 
