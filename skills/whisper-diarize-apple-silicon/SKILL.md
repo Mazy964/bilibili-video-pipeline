@@ -134,26 +134,30 @@ python3 scripts/transcribe-summarize.py ~/videos/xxx/audio.m4a "视频标题"
 
 ### 模型选择（M1 Max 32GB 实测）
 
-| 模型 | 参数 | M1可用 | 推荐 |
-|------|------|--------|------|
-| **Penguin-VL-2B** | 2B | ✅ bfloat16 4GB | 🥇 本地首选 |
-| Penguin-VL-8B | 8B | ✅ | 🥈 |
+| 模型 | 参数 | M1 实测 | 推荐 |
+|------|------|---------|------|
+| **Qwen2.5-VL-7B** | 8.3B | ✅ bfloat16 MPS, ~14GB | 🥇 本地首选 |
+| Qwen2.5-VL-3B | 3B | ✅ | 🥈 轻量备选 |
+| Penguin-VL-2B | 2B | ❌ 缺视觉编码器权重 | 不可用 |
 | Kimi-VL-A3B | 16B/3B激活 | ❌ OOM 30.6GiB | 需API |
-| Keye-VL-2.0 | 30B/3B激活 | ❌ | 云 |
 
-**Penguin-VL-2B** 是腾讯开源的轻量级 VLM：
-- LLM 初始化的视觉编码器（非 CLIP/SigLIP）→ 对 OCR/图表更敏感
-- 时间冗余感知压缩 → 长视频帧预算优化
-- 纯 transformers 加载，无需 vLLM
+**Qwen2.5-VL-7B** 阿里通义千问多模态版，M1 Max 实测：
+- 加载 17 秒（5 个 shard），推理 <10 秒/帧
+- 正确识别芯片架构图（NPU/ISP/GPU 频率、晶体管对比表）
+- 官方支持，无需 `trust_remote_code`，生态成熟
 
 ```python
-from transformers import AutoModelForCausalLM, AutoProcessor
-model = AutoModelForCausalLM.from_pretrained(
-    "tencent/Penguin-VL-2B", torch_dtype=torch.bfloat16,
+from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+from qwen_vl_utils import process_vision_info
+
+model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+    "Qwen/Qwen2.5-VL-7B-Instruct", torch_dtype=torch.bfloat16,
     device_map="mps", trust_remote_code=True)
+processor = AutoProcessor.from_pretrained("Qwen/Qwen2.5-VL-7B-Instruct")
+# pip install qwen-vl-utils
 ```
 
-> Kimi-VL-A3B 虽然 MoE 只激活 3B，但总参数 16B，bfloat16 需 30.6GiB → M1 Max 32GB OOM。CPU 卸载可加载但推理极慢。
+> Kimi-VL-A3B 虽然 MoE 只激活 3B，但总参数 16B，bfloat16 需 30.6GiB → M1 Max 32GB OOM。Penguin-VL-2B 缺少 `Penguin-Encoder` 权重下载失败。
 > 详见 `references/vlm-frame-analysis.md`
 
 ## 转录后端

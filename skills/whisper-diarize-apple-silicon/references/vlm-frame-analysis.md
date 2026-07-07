@@ -17,47 +17,58 @@
 - 兼容性：需 `transformers==4.51.3`，更高版本 API 不兼容
 - vLLM：MPS 无 CUDA 内核，M1 上不可用
 
-### Penguin-VL-2B (Tencent) — ✅ 本地首选
+### Qwen2.5-VL-7B (Alibaba) — ✅ 本地首选
 
-- 架构：2B，LLM 初始化视觉编码器（非 CLIP/SigLIP）
-- 亮点：OCR 友好、时间冗余感知压缩（TRA）、vLLM 插件
-- 加载：bfloat16 ~4GB，`device_map="mps"` 直接跑
-- 部署：纯 transformers，无需 vLLM
+- 架构：8.3B，通义千问多模态版
+- **M1 实测**：bfloat16 MPS 加载 17 秒，推理 <10 秒/帧
+- 芯片图识别正确（NPU/ISP/GPU 频率、晶体管对比表）
+- 官方支持，生态成熟，无需 `trust_remote_code`
+- 依赖：`pip install qwen-vl-utils`
+
+### Penguin-VL-2B (Tencent) — ❌ 缺编码器权重
+
+- 架构：2B，LLM 初始化视觉编码器
+- **M1 实测**：加载时报 `OSError: tencent/Penguin-Encoder does not appear to have a file named pytorch_model.bin`
+- 视觉编码器 `Penguin-Encoder` 需单独下载，当前 HF 仓库不包含
+- 结论：不可用，待上游修复
 
 ### 其他候选
 
 | 模型 | 参数 | M1可用 | 备注 |
 |------|------|--------|------|
+| Qwen2.5-VL-3B | 3B | ✅ | 轻量备选 |
 | StreamingVLM | 7B | ❌ | ICLR'26，无限流实时，用途不同 |
 | Leum-VL-8B | 8B | 可能 | SV6D结构解析，适合创作分析 |
-| Groq Whisper | 云API | ✅ | 228x实时转录，$0.04/h，用户不熟悉故未集成 |
 
-## 部署方式（Penguin-VL-2B）
+## 部署方式（Qwen2.5-VL-7B）
 
 ```python
-from transformers import AutoModelForCausalLM, AutoProcessor
+from transformers import Qwen2_5_VLForConditionalGeneration, AutoProcessor
+from qwen_vl_utils import process_vision_info
 
-model = AutoModelForCausalLM.from_pretrained(
-    "tencent/Penguin-VL-2B",
+model = Qwen2_5_VLForConditionalGeneration.from_pretrained(
+    "Qwen/Qwen2.5-VL-7B-Instruct",
     torch_dtype=torch.bfloat16,
     device_map="mps",
     trust_remote_code=True,
 )
 processor = AutoProcessor.from_pretrained(
-    "tencent/Penguin-VL-2B", trust_remote_code=True
+    "Qwen/Qwen2.5-VL-7B-Instruct"
 )
 
 # 帧分析
 messages = [{
     "role": "user",
     "content": [
-        {"type": "image", "image": "frame_001.jpg"},
+        {"type": "image", "image": "file:///path/to/frame_001.jpg"},
         {"type": "text", "text": "这张图中有什么数据？提取所有数字。"}
     ]
 }]
-text = processor.apply_chat_template(messages, add_generation_prompt=True)
-inputs = processor(text=text, images=["frame_001.jpg"], return_tensors="pt").to("mps")
+text = processor.apply_chat_template(messages, tokenize=False, add_generation_prompt=True)
+image_inputs, video_inputs = process_vision_info(messages)
+inputs = processor(text=[text], images=image_inputs, return_tensors="pt").to("mps")
 outputs = model.generate(**inputs, max_new_tokens=512)
+ans = processor.decode(outputs[0][len(inputs["input_ids"][0]):], skip_special_tokens=True)
 ```
 
 ## 帧抽取
@@ -77,6 +88,6 @@ ffmpeg -i video_low.mp4 -vf "fps=1/10" -q:v 2 frames/frame_%03d.jpg
 流水线新增步骤 ⑤：
 ├─ 下载低码率视频（仅抽帧用）
 ├─ ffmpeg 抽关键帧（fps=1/10）
-├─ Penguin-VL-2B 批量分析帧 → JSON {数字, 图表类型, 屏显文字}
+├─ Qwen2.5-VL-7B 批量分析帧 → JSON {数字, 图表类型, 屏显文字}
 └─ 融合：DeepSeek（转录 + 帧数据）→ 完整报告
 ```
