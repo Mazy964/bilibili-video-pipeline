@@ -10,17 +10,24 @@ category: mlops
 
 ```
 B站视频 URL
- ├─ 1. 先搜 API 字幕（view API → CC字幕）
- │   ├─ 有 CC 字幕 → 下载 JSON → 纯文本（<1秒）
- │   └─ 无字幕 → 进入步骤2
- ├─ 2. 下载音频（yt-dlp+cookie → curl → aria2c 降级）
- └─ 3. 本地 ASR
-     ├─ faster-whisper BatchedInferencePipeline (batch_size=16, float32)
-     ├─ pyannote MPS diarization（可选）
-     └─ LLM 总结 → Obsidian
+ ├─ 1. API 字幕（view API → CC字幕）              ← 秒级免费，优先
+ │   ├─ 有字幕 → JSON → 纯文本（<1秒）→ 跳至步骤5
+ │   └─ 无字幕 → 步骤2+并行web_search
+ ├─ 2. 下载（并行：音频 + web_search第三方文字版）  ← 下载同时搜快科技/腾讯新闻
+ │   ├─ 音频：yt-dlp+cookie → curl → aria2c 降级
+ │   └─ web_search 参考：第三方文字版（仅交叉验证）
+ ├─ 3. 本地 ASR                                  ← faster-whisper BatchedInferencePipeline
+ │   └─ large-v3, float32, batch_size=16
+ ├─ 4. 说话人分离（可选）                          ← pyannote MPS
+ ├─ 5. LLM 精炼 → Obsidian                        ← DeepSeek 总结 + 写笔记
+ └─ 6. VLM 帧分析（评测/教程类）                   ← Qwen2.5-VL-7B 读图表
+     ├─ ffmpeg 抽帧（fps=1/10）
+     └─ 批量推理 → JSON {数字, 图表类型}
 ```
 
-**并行辅助**：下载音频的同时可 web_search "UP主 + 标题关键词 + 总结" 拿第三方文字版作为**参考补充**（快科技、腾讯新闻等）。但 ⚠️ **第三方文字版可能被编辑加工/夹带私货，不能替代原视频的原文转录**。web 版仅用于交叉验证和补充背景，音频转录始终是必须的。
+**并行策略**：步骤2中音频下载和 web_search 同时启动。热门视频文字版秒出 → 可取消下载；长尾视频走完整 ASR 路径。
+
+⚠️ **第三方文字版 = 编辑加工，可能夹带私货。** 仅用于交叉验证，音频转录始终是主路径。
 
 ## 第一步：获取字幕（Safari Cookie）
 
@@ -121,7 +128,9 @@ turns = [(float(t.start), float(t.end), str(s)) for t, _, s in diar.itertracks(y
 
 ## 第五步：LLM 总结 → Obsidian
 
-可复用脚本：`scripts/transcribe-summarize.py` —— 转录 + DeepSeek 总结，一键完成。
+可复用脚本：
+- `scripts/transcribe-summarize.py` —— 转录 + DeepSeek 总结，一键完成
+- `scripts/transcript-to-obsidian.py` —— 已有转录文件 → LLM 精炼 → Obsidian 笔记（支持单集/整系列）
 
 ```bash
 python3 scripts/transcribe-summarize.py ~/videos/xxx/audio.m4a "视频标题"
@@ -189,18 +198,8 @@ processor = AutoProcessor.from_pretrained("Qwen/Qwen2.5-VL-7B-Instruct")
 4. player/v2 无 AI 字幕 → 用 player/wbi/v2 + aid+cid
 5. B站 AI 字幕质量差 → 优先本地 large-v3 ASR
 6. pyannote 4.x generator → StopIteration.value.speaker_diarization
-8. PyYAML 版本兼容：`yaml.safe_load(stream)` vs `yaml.safe_load(open(path))` — 始终用后者（传文件对象而非字符串）
-9. ⚠️ 第三方文字版（快科技、腾讯新闻等）= 编辑二次加工，可能夹带私货/选择性引用/数据失真。只能做参考补充和交叉验证，不能替代原视频的完整原文转录。音频下载+ASR 始终是必须的主路径。
-
-### 辅助参考：web_search 第三方文字版
-
-下载音频的同时可并行 web_search 拿第三方文字版作为**补充参考**：
-```
-web_search("UP主名 + 视频标题 + 总结")
-→ 快科技(mydrivers)、腾讯新闻、电玩帮 等常有时序文字版
-```
-
-⚠️ **第三方文字版 = 编辑加工产物，可能夹带私货/选择性引用/遗漏关键数据。** 仅用于交叉验证和补充背景信息，不能替代原视频的完整原文转录。音频下载 + ASR 始终是必须的主路径。
+7. PyYAML 版本兼容：`yaml.safe_load(stream)` vs `yaml.safe_load(open(path))` — 始终用后者（传文件对象而非字符串）
+8. ⚠️ 第三方文字版（快科技、腾讯新闻等）= 编辑二次加工，可能夹带私货/选择性引用/数据失真。只能做参考补充和交叉验证，不能替代原视频的完整原文转录。音频下载+ASR 始终是必须的主路径。
 
 ## 多 Agent 自动流水线（Kanban）
 
