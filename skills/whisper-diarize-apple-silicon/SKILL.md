@@ -128,6 +128,41 @@ python3 scripts/transcribe-summarize.py ~/videos/xxx/audio.m4a "视频标题"
 # → transcript_raw.txt + transcript.md
 ```
 
+## 第六步：VLM 帧分析（🆕 视觉理解）
+
+纯音频转录抓解说词，但**跑分图表、功耗曲线、对比柱状图**只在画面里。VLM 给流水线加"眼睛"——读屏幕上的数字比听一遍再转录准确。
+
+### 模型选择（M1 Max 32GB 实测）
+
+| 模型 | 参数 | M1可用 | 推荐 |
+|------|------|--------|------|
+| **Penguin-VL-2B** | 2B | ✅ bfloat16 4GB | 🥇 本地首选 |
+| Penguin-VL-8B | 8B | ✅ | 🥈 |
+| Kimi-VL-A3B | 16B/3B激活 | ❌ OOM 30.6GiB | 需API |
+| Keye-VL-2.0 | 30B/3B激活 | ❌ | 云 |
+
+**Penguin-VL-2B** 是腾讯开源的轻量级 VLM：
+- LLM 初始化的视觉编码器（非 CLIP/SigLIP）→ 对 OCR/图表更敏感
+- 时间冗余感知压缩 → 长视频帧预算优化
+- 纯 transformers 加载，无需 vLLM
+
+```python
+from transformers import AutoModelForCausalLM, AutoProcessor
+model = AutoModelForCausalLM.from_pretrained(
+    "tencent/Penguin-VL-2B", torch_dtype=torch.bfloat16,
+    device_map="mps", trust_remote_code=True)
+```
+
+> Kimi-VL-A3B 虽然 MoE 只激活 3B，但总参数 16B，bfloat16 需 30.6GiB → M1 Max 32GB OOM。CPU 卸载可加载但推理极慢。
+> 详见 `references/vlm-frame-analysis.md`
+
+## 转录后端
+
+| 后端 | 速度 | 成本 | |
+|------|------|------|------|
+| faster-whisper (本地) | 0.3x实时 | 免费 | ✅ 默认 |
+| Groq Whisper (云) | 228x实时 | $0.04/h | ❌ 不集成 |
+
 ## 关键 API
 
 | 端点 | 参数 | 说明 |
